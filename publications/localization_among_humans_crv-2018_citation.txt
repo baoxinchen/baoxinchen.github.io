@@ -1,0 +1,8 @@
+@inproceedings{sahdev2018localization,
+  title={Indoor Localization in Dynamic Human Environments using Visual Odometry and Global Pose Refinement},
+  author={Sahdev, Raghavender and Chen, Bao Xin and Tsotsos, John K.},
+  booktitle={Computer and Robot Vision (CRV), 2018 15th Conference on},
+  pages={360--367},
+  year={2018},
+  organization={IEEE}
+}

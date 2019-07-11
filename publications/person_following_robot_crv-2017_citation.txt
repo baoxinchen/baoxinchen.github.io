@@ -1,0 +1,8 @@
+@inproceedings{chen2017personfollowing,
+  title={Person Following Robot Using Selected Online Ada-Boosting with Stereo Camera},
+  author={Chen, Bao Xin and Sahdev, Raghavender and Tsotsos, John K.},
+  booktitle={Computer and Robot Vision (CRV), 2017 14th Conference on},
+  pages={48--55},
+  year={2017},
+  organization={IEEE}
+}

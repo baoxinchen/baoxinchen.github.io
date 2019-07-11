@@ -1,0 +1,8 @@
+@inproceedings{Zhao2019DSSP,
+  title={Dynamic Stale Synchronous Parallel Distributed Training for Deep Learning},
+  author={Zhao, Xing and An, Aijun and Liu, Junfeng and Chen, Bao Xin},
+  booktitle={39th International Conference on Distributed Computing Systems},
+  pages={1508--1517},
+  year={2019},
+  organization={IEEE}
+}

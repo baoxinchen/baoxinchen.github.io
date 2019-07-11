@@ -1,0 +1,6 @@
+@inproceedings{chen2018sceneclassification,
+  title={Scene Classification in Indoor Environments for Robots using Word Embeddings},
+  author={Chen, Bao Xin and Sahdev, Raghavender and Wu, Dekun and Zhao, Xing  and Papagelis, Manos and Tsotsos, John K.},
+  booktitle={ICRA Workshop on Multimodal Robot Perception},
+  year={2018}
+}

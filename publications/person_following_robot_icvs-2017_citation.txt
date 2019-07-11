@@ -1,0 +1,8 @@
+@inproceedings{chen2017integrating,
+  title={Integrating Stereo Vision with a CNN Tracker for a Person-Following Robot},
+  author={Chen, Bao Xin and Sahdev, Raghavender and Tsotsos, John K},
+  booktitle={International Conference on Computer Vision Systems},
+  pages={300--313},
+  year={2017},
+  organization={Springer}
+}
