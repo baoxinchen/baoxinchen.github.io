@@ -1,6 +1,6 @@
-@inproceedings{chen2018scene,
-  title={Scene Classification in Indoor Environments for Robots using Word Embeddings},
-  author={Chen, Bao Xin and Sahdev, Raghavender and Wu, Dekun and Zhao, Xing  and Papagelis, Manos and Tsotsos, John K.},
-  booktitle={International Conference of Robotics and Automation (ICRA) Workshops, 2018},
-  year={2018}
+@article{chen2019scene,
+  title={Scene Classification in Indoor Environments for Robots using Context Based Word Embeddings},
+  author={Chen, Bao Xin and Sahdev, Raghavender and Wu, Dekun and Zhao, Xing and Papagelis, Manos and Tsotsos, John K},
+  journal={arXiv preprint arXiv:1908.06422},
+  year={2019}
 }
