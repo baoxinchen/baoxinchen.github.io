@@ -1,4 +1,4 @@
-@article{Zhao2019DSSP,
+@article{zhao2019dynamic,
   title={Dynamic Stale Synchronous Parallel Distributed Training for Deep Learning},
   author={Zhao, Xing and An, Aijun and Liu, Junfeng and Chen, Bao Xin},
   journal={arXiv preprint arXiv:1908.11848},
