@@ -1,0 +1,4 @@
+@article{zhaoelastic,
+  title={Elastic Bulk Synchronous Parallel Model for Distributed Deep Learning},
+  author={Zhao, Xing and Papagelis, Manos and An, Aijun and Chen, Bao Xin and Liu, Junfeng and Hu, Yonggang}
+}
