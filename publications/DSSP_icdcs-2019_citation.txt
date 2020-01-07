@@ -1,6 +1,8 @@
-@article{zhao2019dynamic,
+@inproceedings{zhao2019dynamic,
   title={Dynamic Stale Synchronous Parallel Distributed Training for Deep Learning},
   author={Zhao, Xing and An, Aijun and Liu, Junfeng and Chen, Bao Xin},
-  journal={arXiv preprint arXiv:1908.11848},
-  year={2019}
+  booktitle={2019 IEEE 39th International Conference on Distributed Computing Systems (ICDCS)},
+  pages={1507--1517},
+  year={2019},
+  organization={IEEE}
 }
