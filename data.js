@@ -9,6 +9,7 @@ var citizen = 'Country of Citizenship: Canada <i class="fab fa-canadian-maple-le
 
 var aboutme = 'I recently completed a masters degree at<a href="http://eecs.lassonde.yorku.ca/" target="_blank">York University Electrical Engineering and Computer Science (EECS)</a> department (2016 - 2019) under <a href="http://jtl.lassonde.yorku.ca/" target="_blank">Professor John K. Tsotsos\'</a> supervision. Previously, I was an undergrad student in <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a> computer science department. My focus was on Machine Learning and Computer Vision (2012 - 2016). My current research interest is in <b>Robot Vision</b> (real-time computer vision and machine learning applications on mobile platforms) and I am open for <b>project collaborations</b> (no limited to object detection/segmentation, object tracking, image classification, robot control, navigation, autonomous vehicle related projects, etc).';
 
+//info_links = [[icon,link], ...]
 var info_links = [['<img src="./images/icon_cv.png" alt="CV" style="height:28px; vertical-align: bottom;">', 'cv.pdf'],
                   ['<img src="./images/icon_transcript_uoft2.png" alt="TranscriptUofT" style="height:28px; vertical-align: bottom;">', 'transcriptUT.pdf'],
                   ['<img src="./images/icon_transcript_yorku2.png" alt="TranscriptYorkU" style="height:28px; vertical-align: bottom;">', 'transcriptYU.pdf'],
@@ -18,6 +19,7 @@ var info_links = [['<img src="./images/icon_cv.png" alt="CV" style="height:28px;
                   ['<i class="fab fa-researchgate" style="font-size:32px; vertical-align: bottom;"></i>', 'https://www.researchgate.net/profile/Bao_Xin_Chen'],
                   ['<i class="fas fa-user-graduate" style="font-size:28px; vertical-align: bottom;"></i>', 'https://scholar.google.ca/citations?user=&user=tnaBlxIAAAAJ']];
 
+// the following 4 arrays are "list of text"
 var activities = ['Sep 17th, 2019, passed the thesis oral examination for the degree of Master of Science at York University. My thesis committee members are Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu',
                   'Aug 15th, 2019, one paper accepted in <a href="http://icdm2019.bigke.org/" target="_blank">19th IEEE International Conference on Data Mining (ICDM) 2019</a>, Beijing, China.',
 				  'Aug 12th, 2019, one paper accepted in ICCV 2019 workshop: <a href="http://www.votchallenge.net/vot2019/" target="_blank">VOT2019</a>, Seoul, South Korea.',
@@ -52,95 +54,3 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-98720199-1', 'auto');
 ga('send', 'pageview');
 //end of TODO
-
-window.onload = function()
-{
-	//set meta
-	$("meta").attr("content", keywords);
-	
-	//set picture
-	$("#mypicture").attr("src", mypicture);
-	
-	//set name and title
-    $("#name").html(name);
-	$("#mytitle").html(mytitle);
-	
-	//set email and citizen
-	for (i = 0; i < emails.length; i++) {
-		var tr = document.createElement("tr");
-		var td = document.createElement("td");
-		$(td).html("<i class='fas fa-envelope' style='font-size:16px'></i>");
-		$(tr).append(td);
-		var td = document.createElement("td");
-		$(td).html(emails[i]);
-		$(tr).append(td);
-		$("#email_citizen").append(tr);
-	}
-	var tr = document.createElement("tr");
-	var td = document.createElement("td");
-	$(td).html("<i class='fas fa-passport' style='font-size:16px'></i>");
-	$(tr).append(td);
-	var td = document.createElement("td");
-	$(td).html(citizen);
-	$(tr).append(td);
-	$("#email_citizen").append(tr);
-	
-	//set text for about me
-	$("#aboutme").html(aboutme);
-	
-	//add info links
-	var tr = document.createElement("tr");
-	for (i = 0; i < info_links.length; i++) {
-		var td = document.createElement("td");
-		var a  = document.createElement("a"); //add link
-		$(a).attr("href", info_links[i][1]);
-		$(a).attr("target", "_blank");
-		$(a).append(info_links[i][0]);//add icon
-		$(td).append(a);
-		$(tr).append(td);
-	}
-	$("#info_links").append(tr);
-	
-	
-	//add activities
-	append_to_table("#activities_table", activities);
-
-	
-	//add awards
-	// graduate
-	append_to_awards_table('<i>Graduate:</i>', graduate_awards);
-	
-	// undergraduate
-	append_to_awards_table('<i>Undergraduate:</i>', undergrad_awards);
-	
-	// high school
-	append_to_awards_table('<i>High School:</i>', highschool_awards);
-}
-
-function append_to_awards_table(school, arrayname){
-	var tr = document.createElement("tr");
-	$(tr).append(document.createElement("td"));
-	var td = document.createElement("td");
-	$(td).html(school);
-	$(tr).append(td);
-	$("#awards_table").append(tr);
-	append_to_table("#awards_table", arrayname);
-}
-
-function append_to_table(tablename, arrayname){
-	for (i = 0; i < arrayname.length; i++) {
-		var tr = document.createElement("tr");
-		$(tr).attr("valign", "top");
-		var td = document.createElement("td");
-		$(td).html("&#8921;");
-		$(tr).append(td);
-		var td = document.createElement("td");
-		$(td).html(arrayname[i]);
-		$(tr).append(td);
-		$(tablename).append(tr);
-		
-		var tr = document.createElement("tr");
-		$(tr).attr("style", "height:5px;");
-		$(tablename).append(tr);
-	}
-}
