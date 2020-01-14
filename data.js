@@ -28,70 +28,124 @@ var info_links = [
 		['<i class="fas fa-user-graduate" style="font-size:28px; vertical-align: bottom;"></i>', 'https://scholar.google.ca/citations?user=&user=tnaBlxIAAAAJ']
 		];
 
+var co_author_list = {
+	'Xing Zhao'            : 'http://www.cse.yorku.ca/~xingzhao/',
+	'Manos Papagelis'      : 'https://www.eecs.yorku.ca/~papaggel/',
+	'Aijun An'             : 'http://www.cse.yorku.ca/~aan/',
+	'Junfeng Liu'          : '',
+	'Yonggang Hu'          : '',
+	'John K. Tsotsos'      : 'http://www.cse.yorku.ca/~tsotsos',
+	'Raghavender Sahdev'   : 'http://www.raghavendersahdev.com/',
+	'Raghavender Sahdev*'  : 'http://www.raghavendersahdev.com/',
+	'Dekun Wu'             : 'https://jackwu502.github.io/',
+	'<b>Bao Xin Chen</b>'  : '',
+	'<b>Bao Xin Chen</b>*' : ''
+};
+
 //publications is a list of json objects. 'src', 'authors', and 'title' can't be empty 
 var publications = [
-		{'src'     : './images/paper7.jpg', 
+		{'src'    : './images/paper7.jpg', 
 		'alt'     : 'Elastic BSP',
-		'authors' : '<a href="http://www.cse.yorku.ca/~xingzhao/" target="_blank">Xing Zhao</a>, <a href="https://www.eecs.yorku.ca/~papaggel/" target="_blank">Manos Papagelis</a>, <a href="http://www.cse.yorku.ca/~aan/" target="_blank">Aijun An</a>, <b>Bao Xin Chen</b>, Junfeng Liu, and Yonggang Hu',
-		'title'   : '"<b><a href="https://www.eecs.yorku.ca/~papaggel/docs/papers/all/ieee-icdm19-zipline.pdf" target="_blank">Elastic Bulk Synchronous Parallel Model for Distributed Deep Learning</a></b>"',
+		'authors' : ['Xing Zhao', 'Manos Papagelis', 'Aijun An', '<b>Bao Xin Chen</b>', 'Junfeng Liu', 'Yonggang Hu'],
+		'title'   : 'Elastic Bulk Synchronous Parallel Model for Distributed Deep Learning',
 		'conf'    : 'in <a href="http://icdm2019.bigke.org/" target="_blank"><i>19th IEEE International Conference on Data Mining (ICDM)</i>, 2019</a>.',
 		'info'    : 'Short Paper',
 		'award'   : '',
-		'links'   : '<a href="https://www.eecs.yorku.ca/~papaggel/docs/papers/all/ieee-icdm19-zipline.pdf" target="_blank">[paper]</a><a href="https://arxiv.org/abs/2001.01347" target="_blank">[arXiv]</a><a href="./publications/EBSP_ICDM_2019_citation.txt" target="_blank">[cite]</a>'},
+		'links'   : {
+			'[paper]' : 'https://www.eecs.yorku.ca/~papaggel/docs/papers/all/ieee-icdm19-zipline.pdf',
+			'[arXiv]' : 'https://arxiv.org/abs/2001.01347',
+			'[cite]'  : './publications/EBSP_ICDM_2019_citation.txt'
+			}
+		},
 
-		{'src'     : './images/paper6_3.jpg', 
+		{'src'    : './images/paper6_3.jpg', 
 		'alt'     : 'Visual Object Tracking',
-		'authors' : '<b>Bao Xin Chen</b> and <a href="http://www.cse.yorku.ca/~tsotsos" target="_blank">John K. Tsotsos</a>',
-		'title'   : '"<a href="https://arxiv.org/abs/1907.03892" target="_blank"><b>Fast Visual Object Tracking with Rotated Bounding Boxes</b></a>"',
+		'authors' : ['<b>Bao Xin Chen</b>', 'John K. Tsotsos'],
+		'title'   : 'Fast Visual Object Tracking with Rotated Bounding Boxes',
 		'conf'    : 'in <a href="http://iccv2019.thecvf.com/program/workshops" target="_blank"><i>IEEE/CVF International Conference on Computer Vision (ICCV) Workshop</i></a>, 2019.',
 		'info'    : '<a href="http://www.votchallenge.net/vot2019/" target="_blank">VOT2019</a> (Oral and Poster)',
 		'award'   : '',
-		'links'   : '<a href="https://arxiv.org/abs/1907.03892" target="_blank">[arXiv]</a><a href="./publications/vot2019_poster.pdf" target="_blank">[poster]</a><a href="./publications/fastVOT_arXiv_2019_citation.txt" target="_blank">[cite]</a><a href="https://github.com/baoxinchen/siammask_e" target="_blank">[code]</a>'},
+		'links'   : {
+			'[paper]'  : 'http://openaccess.thecvf.com/content_ICCVW_2019/papers/VOT/Chen_Fast_Visual_Object_Tracking_using_Ellipse_Fitting_for_Rotated_Bounding_ICCVW_2019_paper.pdf',
+			'[arXiv]'  : 'https://arxiv.org/abs/1907.03892',
+			'[poster]' : './publications/vot2019_poster.pdf',
+			'[cite]'   : './publications/fastVOT_arXiv_2019_citation.txt',
+			'[code]'   : 'https://github.com/baoxinchen/siammask_e'
+			}
+		},
 
-		{'src'     : './images/paper5_3.jpg', 
+		{'src'    : './images/paper5_3.jpg', 
 		'alt'     : 'DSSP',
-		'authors' : '<a href="http://www.cse.yorku.ca/~xingzhao/" target="_blank">Xing Zhao</a>, <a href="http://www.cse.yorku.ca/~aan/" target="_blank">Aijun An</a>, Junfeng Liu, and <b>Bao Xin Chen</b>',
-		'title'   : '"<a href="./publications/DSSP_ICDCS_2019.pdf" target="_blank"><b>Dynamic Stale Synchronous Parallel Distributed Training for Deep Learning</b></a>"',
+		'authors' : ['Xing Zhao', 'Aijun An', 'Junfeng Liu', '<b>Bao Xin Chen</b>'],
+		'title'   : 'Dynamic Stale Synchronous Parallel Distributed Training for Deep Learning',
 		'conf'    : 'in <a href="https://theory.utdallas.edu/ICDCS2019/" target="_blank"><i>39th International Conference on Distributed Computing Systems (ICDCS)</i></a>, IEEE, 2019, pp. 1508-1517.',
 		'info'    : '<b>Oral</b>',
 		'award'   : '',
-		'links'   : '<a href="./publications/DSSP_ICDCS_2019.pdf" target="_blank">[paper]</a><a href="https://arxiv.org/abs/1908.11848" target="_blank">[arXiv]</a><a href="./publications/DSSP_icdcs-2019_citation.txt" target="_blank">[cite]</a>'},
+		'links'   : {
+			'[paper]' : './publications/DSSP_ICDCS_2019.pdf',
+			'[arXiv]' : 'https://arxiv.org/abs/1908.11848',
+			'[cite]'  : './publications/DSSP_icdcs-2019_citation.txt'
+			}
+		},
 
-		{'src'     : './images/paper4_2.png', 
+		{'src'    : './images/paper4_2.png', 
 		'alt'     : 'Words',
-		'authors' : '<b>Bao Xin Chen</b>, <a href="http://www.raghavendersahdev.com/" target="_blank">Raghavender Sahdev</a>, Dekun Wu, <a href="http://www.cse.yorku.ca/~xingzhao/" target="_blank">Xing Zhao</a>, <a href="https://www.eecs.yorku.ca/~papaggel/" target="_blank">Manos Papagelis</a>, and <a href="http://www.cse.yorku.ca/~tsotsos" target="_blank">John K. Tsotsos</a>',
-		'title'   : '"<a href="https://natanaso.github.io/rcw-icra18/assets/ref/ICRA-MRP18_paper_25.pdf" target="_blank"><b>Scene Classification in Indoor Environments for Robots using Word Embeddings</b></a>"',
+		'authors' : ['<b>Bao Xin Chen</b>', 'Raghavender Sahdev', 'Dekun Wu', 'Xing Zhao', 'Manos Papagelis', 'John K. Tsotsos'],
+		'title'   : 'Scene Classification in Indoor Environments for Robots using Word Embeddings',
 		'conf'    : 'in <a href="https://www.icra2018.org/" target="_blank"><i>IEEE International Conference on Robotics and Automation (ICRA) Workshop</i></a>, 2018.',
 		'info'    : 'Poster at workshop <a href="https://natanaso.github.io/rcw-icra18/" target="_blank">Multimodal Robot Perception 2018</a>',
 		'award'   : '',
-		'links'   : '<a href="http://jtl.lassonde.yorku.ca/2018/04/scene-classification-robots/" target="_blank">[project page]</a><a href="https://www.youtube.com/playlist?list=PL_PLOWFkDLAYi8WQzvlWuVtNuUAGmHMpu" target="_blank">[videos]</a><a href="https://natanaso.github.io/rcw-icra18/assets/ref/ICRA-MRP18_paper_25.pdf" target="_blank">[paper]</a><a href="https://arxiv.org/abs/1908.06422" target="_blank">[arXiv]</a><a href="./publications/scene_classification_using_word_embedding_icra-2018workshop_citation.txt" target="_blank">[cite]</a>'},
+		'links'   : {
+			'[project page]' : 'http://jtl.lassonde.yorku.ca/2018/04/scene-classification-robots/',
+			'[videos]'       : 'https://www.youtube.com/playlist?list=PL_PLOWFkDLAYi8WQzvlWuVtNuUAGmHMpu',
+			'[paper]'        : 'https://natanaso.github.io/rcw-icra18/assets/ref/ICRA-MRP18_paper_25.pdf',
+			'[arXiv]'        : 'https://arxiv.org/abs/1908.06422',
+			'[cite]'         : './publications/scene_classification_using_word_embedding_icra-2018workshop_citation.txt'
+			}
+		},
 
-		{'src'     : './images/paper3_2.png', 
+		{'src'    : './images/paper3_2.png', 
 		'alt'     : 'Robot',
-		'authors' : '<a href="http://www.raghavendersahdev.com/" target="_blank">Raghavender Sahdev</a>, <b>Bao Xin Chen</b>, and <a href="http://www.cse.yorku.ca/~tsotsos" target="_blank">John K. Tsotsos</a>',
-		'title'   : '"<a href="https://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/localization_among_humans_crv-2018.pdf" target="_blank"><b>Indoor Localization in Dynamic Human Environments using Visual Odometry and Global Pose Refinement</b></a>"',
+		'authors' : ['Raghavender Sahdev', '<b>Bao Xin Chen</b>', 'John K. Tsotsos'],
+		'title'   : 'Indoor Localization in Dynamic Human Environments using Visual Odometry and Global Pose Refinement',
 		'conf'    : 'in <a href="http://www.computerrobotvision.org/2018/" target="_blank"><i>Computer and Robot Vision (CRV), 2018 15th Conference on</i></a>, IEEE, 2018, pp. 360-367.',
 		'info'    : 'Poster',
 		'award'   : '',
-		'links'   : '<a href="http://jtl.lassonde.yorku.ca/2018/02/localization-among-humans/" target="_blank">[project page]</a><a href="https://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/localization_among_humans_crv-2018.pdf" target="_blank">[paper]</a><a href="./publications/localization_among_humans_crv-2018_citation.txt" target="_blank">[cite]</a>'},
+		'links'   : {
+			'[project page]' : 'http://jtl.lassonde.yorku.ca/2018/02/localization-among-humans/',
+			'[paper]'        : 'https://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/localization_among_humans_crv-2018.pdf',
+			'[cite]'         : './publications/localization_among_humans_crv-2018_citation.txt'
+			}
+		},
 
-		{'src'     : './images/paper2_2.png', 
+		{'src'    : './images/paper2_2.png', 
 		'alt'     : 'Robot',
-		'authors' : '<b>Bao Xin Chen*</b>, <a href="http://www.raghavendersahdev.com/" target="_blank">Raghavender Sahdev*</a>, and <a href="http://www.cse.yorku.ca/~tsotsos" target="_blank">John K. Tsotsos</a>',
-		'title'   : '"<a href="http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/05/personfollowingrobotcnn_icvs2017.pdf" target="_blank"><b>Integrating Stereo Vision with a CNN Tracker for a Person-Following Robot</b></a>"',
+		'authors' : ['<b>Bao Xin Chen</b>*', 'Raghavender Sahdev*', 'John K. Tsotsos'],
+		'title'   : 'Integrating Stereo Vision with a CNN Tracker for a Person-Following Robot',
 		'conf'    : 'in <a href="http://icvs2017.ram-lab.com/" target="_blank"><i>11th International Conference on Computer Vision Systems (ICVS)</i></a>, Springer, 2017, pp. 300-313.',
 		'info'    : '<b>Oral</b> (in highlighted section)',
 		'award'   : 'Received <a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award at <a href="http://icvs2017.ram-lab.com/" target="_blank">ICVS 2017</a>, Shenzhen, China',
-		'links'   : '<a href="http://jtl.lassonde.yorku.ca/2017/05/person-following-cnn/" target="_blank">[project page]</a><a href="https://www.youtube.com/playlist?list=PL_PLOWFkDLAaWp7P3IEgyoyreIa8sFIIW" target="_blank">[videos]</a><a href="http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/05/personfollowingrobotcnn_icvs2017.pdf" target="_blank">[paper]</a><a href="./publications/person_following_robot_icvs-2017_citation.txt" target="_blank">[cite]</a>'},
+		'links'   : {
+			'[project page]' : 'http://jtl.lassonde.yorku.ca/2017/05/person-following-cnn/',
+			'[videos]'       : 'https://www.youtube.com/playlist?list=PL_PLOWFkDLAaWp7P3IEgyoyreIa8sFIIW',
+			'[paper]'        : 'http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/05/personfollowingrobotcnn_icvs2017.pdf',
+			'[cite]'         : './publications/person_following_robot_icvs-2017_citation.txt'
+			}
+		},
 
-		{'src'     : './images/paper1_2.png', 
+		{'src'    : './images/paper1_2.png', 
 		'alt'     : 'Robot',
-		'authors' : '<b>Bao Xin Chen*</b>, <a href="http://www.raghavendersahdev.com/" target="_blank">Raghavender Sahdev*</a>, and <a href="http://www.cse.yorku.ca/~tsotsos" target="_blank">John K. Tsotsos</a>',
-		'title'   : '"<a href="http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/02/pfr_paper_crv2017.pdf" target="_blank"><b>Person Following Robot Using Selected Online Ada-Boosting with Stereo Camera</b></a>"',
+		'authors' : ['<b>Bao Xin Chen</b>*', 'Raghavender Sahdev*', 'John K. Tsotsos'],
+		'title'   : 'Person Following Robot Using Selected Online Ada-Boosting with Stereo Camera',
 		'conf'    : 'in <a href="http://www.computerrobotvision.org/2017/" target="_blank"><i>Computer and Robot Vision (CRV), 2017 14th Conference on</i></a>, IEEE, 2017, pp. 48-55.',
 		'info'    : '<b>Oral</b>',
 		'award'   : 'Received <a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award at <a href="http://aigicrv.org/2017/" target="_blank">AI-GI-CRV 2017</a>, Edmonton, Canada',
-		'links'   : '<a href="http://jtl.lassonde.yorku.ca/2017/02/person-following/" target="_blank">[project page]</a><a href="http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/02/pfr_paper_crv2017.pdf" target="_blank">[paper]</a><a href="./publications/person_following_robot_crv-2017_citation.txt" target="_blank">[cite]</a>'}
+		'links'   : {
+			'[project page]' : 'http://jtl.lassonde.yorku.ca/2017/02/person-following/',
+			'[paper]'        : 'http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/02/pfr_paper_crv2017.pdf',
+			'[cite]'         : './publications/person_following_robot_crv-2017_citation.txt'
+			}
+		}
 		];
 
 // the following 4 arrays are "list of text"
