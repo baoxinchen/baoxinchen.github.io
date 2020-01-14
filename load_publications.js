@@ -1,4 +1,7 @@
-/*wrote by Bao Xin Chen*/
+/*
+wrote by Bao Xin Chen
+https://baoxinchen.github.io/baoxinchen/
+*/
 
 function load_publications(){
 	for (i = 0; i < publications.length; i++) {

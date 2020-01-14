@@ -1,4 +1,7 @@
-/*wrote by Bao Xin Chen*/
+/*
+wrote by Bao Xin Chen
+https://baoxinchen.github.io/baoxinchen/
+*/
 
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
 var mypicture = './images/baoxinchen.jpg';
