@@ -3,7 +3,7 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
-var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.14/01:41am';
+var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.14/01:49am';
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
 var mypicture = './images/baoxinchen.jpg';
 var name = 'Bao Xin Chen 陈宝新';

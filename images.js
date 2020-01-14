@@ -49,7 +49,6 @@ function set_images(imgs){
 	//set thumbnail
 	var num_col = 7;
 	var num_row = Math.floor(imgs.length / num_col)+1;
-	console.dir(num_row);
 	for (i = 0; i < num_row; i++) {
 		var row_div = document.createElement("div");
 		$(row_div).attr("class", "row");
@@ -58,7 +57,6 @@ function set_images(imgs){
 			$(col_div).attr("class", "column");
 			var img = document.createElement("img");
 			$(img).attr("class", "demo cursor");
-			console.dir(i*num_col+j);
 			$(img).attr("src", imgs[i*num_col+j][0]);
 			$(img).attr("onclick", "currentSlide("+(i*num_col+j+1)+")");
 			$(img).attr("alt", imgs[i*num_col+j][1]);
