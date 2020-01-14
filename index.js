@@ -69,6 +69,9 @@ window.onload = function(){
 	// high school
 	if (highschool_awards.length>0)
 		append_to_awards_table('<i>High School:</i>', highschool_awards);
+	
+	// copyright
+	$("#copyright").html(copyright);
 }
 
 function append_to_awards_table(school, arrayname){

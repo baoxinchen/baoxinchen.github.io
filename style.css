@@ -33,3 +33,9 @@ p {
 table, th, td {
   //border: 1px solid black;
 }
+
+#copyright {
+	font-size:11px; 
+	width: 100%; 
+	text-align:center;
+}

@@ -3,6 +3,7 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
+var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.14/01:25am';
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
 var mypicture = './images/baoxinchen.jpg';
 var name = 'Bao Xin Chen 陈宝新';
@@ -12,7 +13,7 @@ var emails = ['baox[last name][at]cse[dot]yorku[dot]ca',
 				'baoxin[dot][last name][at]outlook[dot]com'];
 var citizen = 'Country of Citizenship: Canada <i class="fab fa-canadian-maple-leaf" style="font-size:16px"></i>';
 
-var aboutme = 'I recently completed a masters degree at<a href="http://eecs.lassonde.yorku.ca/" target="_blank">York University Electrical Engineering and Computer Science (EECS)</a> department (2016 - 2019) under <a href="http://jtl.lassonde.yorku.ca/" target="_blank">Professor John K. Tsotsos\'</a> supervision. Previously, I was an undergrad student in <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a> computer science department. My focus was on Machine Learning and Computer Vision (2012 - 2016). My current research interest is in <b>Robot Vision</b> (real-time computer vision and machine learning applications on mobile platforms) and I am open for <b>project collaborations</b> (no limited to object detection/segmentation, object tracking, image classification, robot control, navigation, autonomous vehicle related projects, etc).';
+var aboutme = 'I recently completed Master of Science degree at <a href="http://eecs.lassonde.yorku.ca/" target="_blank">York University Electrical Engineering and Computer Science (EECS)</a> department (2016 - 2019) under <a href="http://jtl.lassonde.yorku.ca/" target="_blank">Professor John K. Tsotsos\'</a> supervision. Previously, I earned a Bachelor of science degree from <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a> computer science department. My focus was on Machine Learning and Computer Vision (2012 - 2016). My current research interest is in <b>Robot Vision</b> (real-time computer vision and machine learning applications on mobile platforms).';
 
 //info_links = [[icon,link], ...]
 var info_links = [
