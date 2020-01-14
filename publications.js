@@ -19,4 +19,7 @@ window.onload = function(){
 	$("#emails").html(html_text);
 	//add publications
 	load_publications();
+	
+	// copyright
+	$("#copyright").html(copyright);
 }

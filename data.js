@@ -3,7 +3,7 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
-var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.14/01:25am';
+var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.14/01:41am';
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
 var mypicture = './images/baoxinchen.jpg';
 var name = 'Bao Xin Chen 陈宝新';
@@ -16,6 +16,7 @@ var citizen = 'Country of Citizenship: Canada <i class="fab fa-canadian-maple-le
 var aboutme = 'I recently completed Master of Science degree at <a href="http://eecs.lassonde.yorku.ca/" target="_blank">York University Electrical Engineering and Computer Science (EECS)</a> department (2016 - 2019) under <a href="http://jtl.lassonde.yorku.ca/" target="_blank">Professor John K. Tsotsos\'</a> supervision. Previously, I earned a Bachelor of science degree from <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a> computer science department. My focus was on Machine Learning and Computer Vision (2012 - 2016). My current research interest is in <b>Robot Vision</b> (real-time computer vision and machine learning applications on mobile platforms).';
 
 //info_links = [[icon,link], ...]
+// e.g., github, linkedin, youtube, google scholar, etc.
 var info_links = [
 		['<img src="./images/icon_cv.png" alt="CV" style="height:28px; vertical-align: bottom;">', 'cv.pdf'],
 		['<img src="./images/icon_transcript_uoft2.png" alt="TranscriptUofT" style="height:28px; vertical-align: bottom;">', 'transcriptUT.pdf'],

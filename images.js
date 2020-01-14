@@ -25,6 +25,9 @@ window.onload = function(){
 	
 	// start slide show
 	showSlides(slideIndex);
+	
+	// copyright
+	$("#copyright").html(copyright);
 }
 
 function set_images(imgs){
