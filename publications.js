@@ -1,3 +1,5 @@
+/*wrote by Bao Xin Chen*/
+
 window.onload = function(){
 	//set name and title
     $("#name").html(name);

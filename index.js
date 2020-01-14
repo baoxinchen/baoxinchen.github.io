@@ -1,3 +1,5 @@
+/*wrote by Bao Xin Chen*/
+
 window.onload = function(){
 	//set meta
 	$("meta").attr("content", keywords);
