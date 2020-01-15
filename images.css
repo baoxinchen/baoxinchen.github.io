@@ -10,14 +10,20 @@ https://baoxinchen.github.io/baoxinchen/
 /* Position the image container (needed to position the left and right arrows) */
 .container {
 	max-width: 800px;
-	margin: 0 auto;
+	margin: auto auto;
 	position: relative;
 }
 
 /* Hide the images by default */
 .mySlides {
 	display: none;
-	height: 600px;
+}
+
+.display {
+	max-height: 600px; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -30,7 +36,7 @@ https://baoxinchen.github.io/baoxinchen/
 .next {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	width: auto;
 	padding: 16px;
 	margin-top: -50px;
@@ -102,11 +108,4 @@ https://baoxinchen.github.io/baoxinchen/
 .active,
 .demo:hover {
 	opacity: 1;
-}
-
-.display {
-	height:100%; 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto;
 }

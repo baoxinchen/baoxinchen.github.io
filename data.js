@@ -3,11 +3,11 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
-var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.14/21:51pm <a href="https://github.com/baoxinchen/baoxinchen" target="_blank">[source code]</a>';
+var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.15/04:17am <a href="https://github.com/baoxinchen/baoxinchen" target="_blank">[source code]</a>';
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
-var mypicture = './images/baoxinchen.jpg';
+var mypicture = './images/baoxinchen.jpg'; // this picture will display in the top left corner
 var name = 'Bao Xin Chen 陈宝新';
-var mytitle = 'Master\'s student <i class="fas fa-at"></i> <a href="http://www.yorku.ca" target="_blank">York University</a>, Toronto, Canada</br>';
+var mytitle = 'Master\'s student @ <a href="http://www.yorku.ca" target="_blank">York University</a>, Toronto, Canada';
 
 var emails = ['baox[last name][at]cse[dot]yorku[dot]ca', 
 		'baoxin[dot][last name][at]outlook[dot]com'];
@@ -41,7 +41,7 @@ var co_author_list = {
 	'Dekun Wu'             : 'https://jackwu502.github.io/',
 	'<b>Bao Xin Chen</b>'  : '',
 	'<b>Bao Xin Chen</b>*' : '',
-	'Author Name'          : 'This author\'s homepage link'
+	'Author\'s Name'       : 'This author\'s homepage link'
 };
 
 // publications is a list of json objects. 
@@ -76,7 +76,7 @@ var publications = [
 		'authors' : ['<b>Bao Xin Chen</b>', 'John K. Tsotsos'],
 		'title'   : 'Fast Visual Object Tracking with Rotated Bounding Boxes',
 		'conf'    : 'in <i>IEEE/CVF International Conference on Computer Vision (ICCV) Workshop</i>, 2019.',
-		'info'    : '<a href="http://www.votchallenge.net/vot2019/" target="_blank">VOT2019</a> (Oral and Poster)',
+		'info'    : 'Oral and Poster at workshop: <a href="http://www.votchallenge.net/vot2019/" target="_blank">VOT 2019</a>',
 		'award'   : '',
 		'links'   : {
 			'[paper]'  : 'http://openaccess.thecvf.com/content_ICCVW_2019/papers/VOT/Chen_Fast_Visual_Object_Tracking_using_Ellipse_Fitting_for_Rotated_Bounding_ICCVW_2019_paper.pdf',
@@ -106,7 +106,7 @@ var publications = [
 		'authors' : ['<b>Bao Xin Chen</b>', 'Raghavender Sahdev', 'Dekun Wu', 'Xing Zhao', 'Manos Papagelis', 'John K. Tsotsos'],
 		'title'   : 'Scene Classification in Indoor Environments for Robots using Word Embeddings',
 		'conf'    : 'in <i>IEEE International Conference on Robotics and Automation (ICRA) Workshop</i>, 2018.',
-		'info'    : 'Poster at workshop <a href="https://natanaso.github.io/rcw-icra18/" target="_blank">Multimodal Robot Perception 2018</a>',
+		'info'    : 'Oral and Poster at workshop: <a href="https://natanaso.github.io/rcw-icra18/" target="_blank">Multimodal Robot Perception 2018</a>',
 		'award'   : '',
 		'links'   : {
 			'[project page]' : 'http://jtl.lassonde.yorku.ca/2018/04/scene-classification-robots/',
@@ -136,8 +136,8 @@ var publications = [
 		'authors' : ['<b>Bao Xin Chen</b>*', 'Raghavender Sahdev*', 'John K. Tsotsos'],
 		'title'   : 'Integrating Stereo Vision with a CNN Tracker for a Person-Following Robot',
 		'conf'    : 'in <i>11th International Conference on Computer Vision Systems (ICVS)</i>, Springer, 2017, pp. 300-313.',
-		'info'    : '<b>Oral</b> (in highlighted section)',
-		'award'   : 'Received <a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award at <a href="http://icvs2017.ram-lab.com/" target="_blank">ICVS 2017</a>, Shenzhen, China',
+		'info'    : '<b>Oral</b> in highlighted section',
+		'award'   : 'Received <a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award at ICVS 2017, Shenzhen, China',
 		'links'   : {
 			'[project page]' : 'http://jtl.lassonde.yorku.ca/2017/05/person-following-cnn/',
 			'[videos]'       : 'https://www.youtube.com/playlist?list=PL_PLOWFkDLAaWp7P3IEgyoyreIa8sFIIW',
@@ -152,7 +152,7 @@ var publications = [
 		'title'   : 'Person Following Robot Using Selected Online Ada-Boosting with Stereo Camera',
 		'conf'    : 'in <i>Computer and Robot Vision (CRV), 2017 14th Conference on</i>, IEEE, 2017, pp. 48-55.',
 		'info'    : '<b>Oral</b>',
-		'award'   : 'Received <a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award at <a href="http://aigicrv.org/2017/" target="_blank">AI-GI-CRV 2017</a>, Edmonton, Canada',
+		'award'   : 'Received <a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award at AI-GI-CRV 2017, Edmonton, Canada',
 		'links'   : {
 			'[project page]' : 'http://jtl.lassonde.yorku.ca/2017/02/person-following/',
 			'[paper]'        : 'http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/02/pfr_paper_crv2017.pdf',
@@ -168,14 +168,14 @@ var publications = [
 var activities = [
 		'', // add a news here
 		'Sep 17th, 2019, passed the thesis oral examination for the degree of Master of Science at York University. My thesis committee members are Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu',
-		'Aug 15th, 2019, one paper accepted in <a href="http://icdm2019.bigke.org/" target="_blank">19th IEEE International Conference on Data Mining (ICDM) 2019</a>, Beijing, China.',
-		'Aug 12th, 2019, one paper accepted in ICCV 2019 workshop: <a href="http://www.votchallenge.net/vot2019/" target="_blank">VOT2019</a>, Seoul, South Korea.',
-		'July 15th, 2019, published a new state-of-the-art <a href="https://arxiv.org/abs/1907.03892" target="_blank">object tracking algorithm</a> for visual object tracking datasets that labeled with rotated bounding boxes (VOT2015-2019). And, the code is available on <a href="https://github.com/baoxinchen/siammask_e" target="_blank">GitHub</a>.',
+		'Aug 15th, 2019, one paper accepted in 19th IEEE International Conference on Data Mining (ICDM) 2019, Beijing, China.',
+		'Aug 12th, 2019, one paper accepted in ICCV 2019 workshop: <a href="http://www.votchallenge.net/vot2019/" target="_blank">VOT 2019</a>, Seoul, South Korea.',
+		'July 15th, 2019, published a new state-of-the-art object tracking algorithm for visual object tracking datasets that labeled with rotated bounding boxes (VOT 2015-2019). And, the code is available on <a href="https://github.com/baoxinchen/siammask_e" target="_blank">GitHub</a>.',
 		'June 7th, 2018, I presented a poster at NCFRN AGM 2018 in Montreal, Quebec.',
 		'May 21th, 2018, my paper "Scene Classification in Indoor Environments for Robots using Word Embeddings" appeared at ICRA 2018 Workshop: Representing a Complex World in Brisbane, Australia.',
 		'May 10th, 2018, my paper "Indoor Localization in Dynamic Human Environments using Visual Odometry and Global Pose Refinement" appeared at the 15th Conference on Computer and Robot Vision (CRV 2018) in Toronto, Canada.',
-		'May 8th-11th, 2018, volunteered at <a href="http://aigicrv.org/2018/" target="_blank">AI-GI-CRV 2018</a> in Toronto, Canada.',
-		'May 3th, 2018, one paper accepted by <a href="https://natanaso.github.io/rcw-icra18/" target="_blank">ICRA 2018 Workshop: Representing a Complex World</a>.',
+		'May 8th-11th, 2018, volunteered at AI-GI-CRV 2018 in Toronto, Canada.',
+		'May 3th, 2018, one paper accepted by ICRA 2018 Workshop: Representing a Complex World.',
 		'July 10th, 2017, orally presented my paper "Integrating Stereo Vision with a CNN Tracker for a Person-Following Robot" at the 11th International Conference on Computer Vision System (ICVS 2017), Shenzhen, China (Shenzhen is a city near my hometown Taishan).',
 		'June 13th, 2017, presented a poster at York University CVR & VISTA Internatinal Conference on Vision in the Real World, Toronto, Ontario.',
 		'May 19th, 2017, orally presented my paper "Person Following Robot Using Selected Online Ada-Boosting with Stereo Camera" at the 14th Conference on Computer and Robot Vision (CRV 2017), Edmonton, Alberta.',
@@ -188,16 +188,16 @@ var graduate_awards = [
 		'', // add an award here 
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University) - offered: CAD $15,000 (2019 - 2020, I rejected).',
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University) - Total value: CAD $15,000 (2018 Sep - 2019 Aug).',
-		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award at <a href="http://icvs2017.ram-lab.com/" target="_blank">ICVS 2017</a>, Shenzhen, China',
-		'<a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award at <a href="http://aigicrv.org/2017/" target="_blank">AI-GI-CRV 2017</a>, Edmonton, Canada',
-		'<a href="http://www.yorku.ca/" target="_blank">York University</a> Masters Domestic Student Offer funding - Total value: CAD $41,666 (2016 Sep - 2018 Apr).',
-		'<a href="http://eecs.lassonde.yorku.ca/" target="_blank">Lassonde Graduate</a> Entrance Scholarship (<a href="http://www.yorku.ca/" target="_blank">York University</a>) - Total value: CAD $8,000 (2016 Sep - 2017 Aug).'
+		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award at ICVS 2017, Shenzhen, China',
+		'<a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award at AI-GI-CRV 2017, Edmonton, Canada',
+		'York University Masters Domestic Student Offer funding - Total value: CAD $41,666 (2016 Sep - 2018 Apr).',
+		'Lassonde Graduate Entrance Scholarship (York University) - Total value: CAD $8,000 (2016 Sep - 2017 Aug).'
 		];
 var undergrad_awards = [
 		'', // add an award here
-		'Graduated with High Distinction (<a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>) (2016).',
-		'Norma Brock Award (<a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>) - Total value: CAD $3,000 (2014 & 2015).',
-		'Dean\'s List (<a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a>) (2013-2016).'
+		'Graduated with High Distinction (University of Toronto) (2016).',
+		'Norma Brock Award (University of Toronto) - Total value: CAD $3,000 (2014 & 2015).',
+		'Dean\'s List (University of Toronto) (2013-2016).'
 		];
 var highschool_awards = ['Ontario Principal\'s Award (2012).']; // set to [], if you don't want to list awards from high school
 
