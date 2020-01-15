@@ -9,15 +9,15 @@ a:link {
 }
 
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 a:visited {
-    color: black;
+	color: black;
 }
 
 a:active {
-    color: black;
+	color: black;
 }
 
 p {

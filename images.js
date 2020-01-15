@@ -7,7 +7,7 @@ var slideIndex = 1;
 
 window.onload = function(){
 	//set name and title
-    $("#name").html(name);
+	$("#name").html(name);
 	$("#mytitle").html(mytitle);
 	
 	//set emails
