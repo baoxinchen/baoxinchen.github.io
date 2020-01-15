@@ -18,9 +18,9 @@ var aboutme = 'I recently completed Master of Science degree at <a href="http://
 // info_links = [[icon,link], ...]
 // e.g., github, linkedin, youtube, google scholar, etc.
 var info_links = [
-		['<img src="./images/icon_cv.png" alt="CV" style="height:28px; vertical-align: bottom;">', 'cv.pdf'],
-		['<img src="./images/icon_transcript_uoft2.png" alt="TranscriptUofT" style="height:28px; vertical-align: bottom;">', 'transcriptUT.pdf'],
-		['<img src="./images/icon_transcript_yorku2.png" alt="TranscriptYorkU" style="height:28px; vertical-align: bottom;">', 'transcriptYU.pdf'],
+		['<img src="./images/icon_cv.png" alt="CV" style="height:28px; vertical-align: bottom;">', './files/cv.pdf'],
+		['<img src="./images/icon_transcript_uoft2.png" alt="TranscriptUofT" style="height:28px; vertical-align: bottom;">', './files/transcriptUT.pdf'],
+		['<img src="./images/icon_transcript_yorku2.png" alt="TranscriptYorkU" style="height:28px; vertical-align: bottom;">', './files/transcriptYU.pdf'],
 		['<i class="fa fa-linkedin-square" style="font-size:33px; vertical-align: bottom;"></i>', 'https://www.linkedin.com/in/baoxinchen'],
 		['<i class="fa fa-youtube-square" style="font-size:33px; vertical-align: bottom;"></i>', 'https://www.youtube.com/channel/UCe4C3FN8R0iWdbt3hEoNJfQ/playlists'],
 		['<i class="fa fa-github-square" style="font-size:33px; vertical-align: bottom;"></i>', 'https://github.com/baoxinchen'],
