@@ -6,12 +6,12 @@ https://baoxinchen.github.io/baoxinchen/
 window.onload = function(){
 	//set meta
 	$("meta").attr("content", keywords);
-	
+
 	//set picture
 	$("#mypicture").attr("src", mypicture);
-	
+
 	//set name and title
-    $("#name").html(name);
+	$("#name").html(name);
 	$("#mytitle").html(mytitle);
 	
 	//set email and citizen
