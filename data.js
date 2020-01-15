@@ -29,6 +29,7 @@ var info_links = [
 		];
 
 // co_author_list = {'author name': 'link', ...}
+// this autors will appear in variable "publications"
 var co_author_list = {
 	'Xing Zhao'            : 'http://www.cse.yorku.ca/~xingzhao/',
 	'Manos Papagelis'      : 'https://www.eecs.yorku.ca/~papaggel/',
