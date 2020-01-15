@@ -86,6 +86,8 @@ function append_to_awards_table(school, arrayname){
 
 function append_to_table(tablename, arrayname){
 	for (i = 0; i < arrayname.length; i++) {
+		if (arrayname[i] == '')
+			continue;
 		var tr = document.createElement("tr");
 		$(tr).attr("valign", "top");
 		var td = document.createElement("td");

@@ -5,6 +5,9 @@ https://baoxinchen.github.io/baoxinchen/
 
 function load_publications(){
 	for (i = 0; i < publications.length; i++) {
+		if (publications[i]['title']=='')
+			continue; //skip empty title entries
+		
 		var tr = document.createElement("tr");
 		
 		var td = document.createElement("td");
@@ -41,7 +44,7 @@ function load_publications(){
 		if (publications[i]['award']!='')
 			html_text = html_text+'<i class="fas fa-award" style="font-size:16px"></i> '+publications[i]['award']+'<br>';
 		
-		if (publications[i]['links']!={}) {
+		if (!jQuery.isEmptyObject(publications[i]['links'])) {
 			html_text = html_text+'<i class="fa fa-hand-o-right" style="font-size:16px"></i> ';
 			for (L in publications[i]['links']) {
 				html_text = html_text+'<a href="'+publications[i]['links'][L]+'" target="_blank">'+L+'</a>'
@@ -53,7 +56,7 @@ function load_publications(){
 		
 		$('#publications_table').append(tr);
 		
-		
+		//append some space after each entry
 		var tr = document.createElement("tr");
 		var td = document.createElement("td");
 		$(td).attr('colspan','2');
@@ -62,6 +65,7 @@ function load_publications(){
 		$('#publications_table').append(tr);
 	}
 	
+	//append legend
 	var tr = document.createElement("tr");
 	var td = document.createElement("td");
 	$(td).attr('colspan','2');
