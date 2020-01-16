@@ -170,8 +170,8 @@ var activities = [
 		'', // add a news here
 		'Sep 17th, 2019, passed the thesis oral examination for the degree of Master of Science at York University. My thesis committee members are Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu',
 		'Aug 15th, 2019, one paper accepted in 19th IEEE International Conference on Data Mining (ICDM) 2019, Beijing, China.',
-		'Aug 12th, 2019, one paper accepted in ICCV 2019 workshop: <a href="http://www.votchallenge.net/vot2019/" target="_blank">VOT 2019</a>, Seoul, South Korea.',
-		'July 15th, 2019, published a new state-of-the-art object tracking algorithm for visual object tracking datasets that labeled with rotated bounding boxes (VOT 2015-2019). And, the code is available on <a href="https://github.com/baoxinchen/siammask_e" target="_blank">GitHub</a>.',
+		'Aug 12th, 2019, one paper accepted in ICCV 2019 workshop: VOT 2019, Seoul, South Korea.',
+		'July 15th, 2019, published a new state-of-the-art object tracking algorithm for visual object tracking datasets that labeled with rotated bounding boxes (VOT 2015-2019). And, the code is available on <a href="https://github.com/baoxinchen/siammask_e" target="_blank">[GitHub]</a>.',
 		'June 7th, 2018, I presented a poster at NCFRN AGM 2018 in Montreal, Quebec.',
 		'May 21th, 2018, my paper "Scene Classification in Indoor Environments for Robots using Word Embeddings" appeared at ICRA 2018 Workshop: Representing a Complex World in Brisbane, Australia.',
 		'May 10th, 2018, my paper "Indoor Localization in Dynamic Human Environments using Visual Odometry and Global Pose Refinement" appeared at the 15th Conference on Computer and Robot Vision (CRV 2018) in Toronto, Canada.',
