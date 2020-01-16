@@ -81,6 +81,11 @@ function append_to_awards_table(school, arrayname){
 	$(td).html(school);
 	$(tr).append(td);
 	$("#awards_table").append(tr);
+	
+	var tr = document.createElement("tr");
+	$(tr).attr("style", "height:5px;");
+	$("#awards_table").append(tr);
+	
 	append_to_table("#awards_table", arrayname);
 }
 
