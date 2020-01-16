@@ -15,7 +15,7 @@ window.onload = function(){
 	$("#mytitle").html(mytitle);
 	
 	//set email and citizen
-	for (i = 0; i < emails.length; i++) {
+	for (var i = 0; i < emails.length; i++) {
 		var tr = document.createElement("tr");
 		var td = document.createElement("td");
 		$(td).html("<i class='fas fa-envelope' style='font-size:16px'></i>");
@@ -39,7 +39,7 @@ window.onload = function(){
 	
 	//add info links
 	var tr = document.createElement("tr");
-	for (i = 0; i < info_links.length; i++) {
+	for (var i = 0; i < info_links.length; i++) {
 		var td = document.createElement("td");
 		var a  = document.createElement("a"); //add link
 		$(a).attr("href", info_links[i][1]);
@@ -79,18 +79,15 @@ function append_to_awards_table(school, arrayname){
 	$(tr).append(document.createElement("td"));
 	var td = document.createElement("td");
 	$(td).html(school);
+	$(td).attr('style', 'padding-bottom: 5px;');
 	$(tr).append(td);
-	$("#awards_table").append(tr);
-	
-	var tr = document.createElement("tr");
-	$(tr).attr("style", "height:5px;");
 	$("#awards_table").append(tr);
 	
 	append_to_table("#awards_table", arrayname);
 }
 
 function append_to_table(tablename, arrayname){
-	for (i = 0; i < arrayname.length; i++) {
+	for (var i = 0; i < arrayname.length; i++) {
 		if (arrayname[i] == '')
 			continue;
 		var tr = document.createElement("tr");
@@ -100,11 +97,8 @@ function append_to_table(tablename, arrayname){
 		$(tr).append(td);
 		var td = document.createElement("td");
 		$(td).html(arrayname[i]);
+		$(td).attr('style', 'padding-bottom: 5px;');
 		$(tr).append(td);
-		$(tablename).append(tr);
-		
-		var tr = document.createElement("tr");
-		$(tr).attr("style", "height:5px;");
 		$(tablename).append(tr);
 	}
 }

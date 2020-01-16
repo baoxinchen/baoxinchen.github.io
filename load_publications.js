@@ -4,7 +4,7 @@ https://baoxinchen.github.io/baoxinchen/
 */
 
 function load_publications(){
-	for (i = 0; i < publications.length; i++) {
+	for (var i = 0; i < publications.length; i++) {
 		if (publications[i]['title']=='')
 			continue; //skip empty title entries
 		
@@ -23,32 +23,32 @@ function load_publications(){
 		var html_text = '';
 		
 		var authors = publications[i]['authors'];
-		for (j = 0; j < authors.length; j++) {
+		for (var j = 0; j < authors.length; j++) {
 			if (co_author_list[authors[j]] != '' && j < authors.length-1)
-				html_text = html_text + '<a href="'+co_author_list[authors[j]]+'" target="_blank">'+authors[j]+'</a>, ';
+				html_text += '<a href="'+co_author_list[authors[j]]+'" target="_blank">'+authors[j]+'</a>, ';
 			else if (co_author_list[authors[j]] == '' && j < authors.length-1)
-				html_text = html_text + authors[j]+', ';
+				html_text += authors[j]+', ';
 			else if (co_author_list[authors[j]] != '' && j == authors.length-1)
-				html_text = html_text + 'and <a href="'+co_author_list[authors[j]]+'" target="_blank">'+authors[j]+'</a><br>';
+				html_text += 'and <a href="'+co_author_list[authors[j]]+'" target="_blank">'+authors[j]+'</a><br>';
 			else
-				html_text = html_text + 'and '+authors[j]+'<br>';
+				html_text += 'and '+authors[j]+'<br>';
 		}
 		
-		html_text = html_text+'"<b>'+publications[i]['title']+'</b>"<br>';
+		html_text += '"<b>'+publications[i]['title']+'</b>"<br>';
 		
 		if (publications[i]['conf']!='')
-			html_text = html_text+publications[i]['conf']+'<br>';
+			html_text += publications[i]['conf']+'<br>';
 		
 		if (publications[i]['info']!='')
-			html_text = html_text+'<i class="fa fa-info-circle" style="font-size:16px"></i> '+publications[i]['info']+'<br>';
+			html_text += '<i class="fa fa-info-circle" style="font-size:16px"></i> '+publications[i]['info']+'<br>';
 		
 		if (publications[i]['award']!='')
-			html_text = html_text+'<i class="fas fa-award" style="font-size:16px"></i> '+publications[i]['award']+'<br>';
+			html_text += '<i class="fas fa-award" style="font-size:16px"></i> '+publications[i]['award']+'<br>';
 		
 		if (!jQuery.isEmptyObject(publications[i]['links'])) {
-			html_text = html_text+'<i class="fa fa-hand-o-right" style="font-size:16px"></i> ';
+			html_text += '<i class="fa fa-hand-o-right" style="font-size:16px"></i> ';
 			for (L in publications[i]['links']) {
-				html_text = html_text+'<a href="'+publications[i]['links'][L]+'" target="_blank">'+L+'</a>'
+				html_text += '<a href="'+publications[i]['links'][L]+'" target="_blank">'+L+'</a> '
 			}
 		}
 		

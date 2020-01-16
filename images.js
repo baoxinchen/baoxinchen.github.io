@@ -12,11 +12,11 @@ window.onload = function(){
 	
 	//set emails
 	var html_text = '';
-	for (i = 0; i < emails.length; i++) {
-		html_text = html_text+'<i class="fas fa-envelope" style="font-size:16px"></i> ';
-		html_text = html_text+emails[i];
+	for (var i = 0; i < emails.length; i++) {
+		html_text += '<i class="fas fa-envelope" style="font-size:16px"></i> ';
+		html_text += emails[i];
 		if (i < emails.length-1)
-			html_text = html_text+'; ';
+			html_text += '; ';
 	}
 	$("#emails").html(html_text);
 	
@@ -32,7 +32,7 @@ window.onload = function(){
 
 function set_images(imgs){
 	//set canvas
-	for (i = 0; i < imgs.length; i++) {
+	for (var i = 0; i < imgs.length; i++) {
 		var div = document.createElement("div");
 		$(div).attr("class", "mySlides");
 		var num_text_div = document.createElement("div");
@@ -49,10 +49,10 @@ function set_images(imgs){
 	//set thumbnail
 	var num_col = 7;
 	var num_row = Math.floor(imgs.length / num_col)+1;
-	for (i = 0; i < num_row; i++) {
+	for (var i = 0; i < num_row; i++) {
 		var row_div = document.createElement("div");
 		$(row_div).attr("class", "row");
-		for (j = 0; (j < num_col && !(i == num_row-1)) || (j < imgs.length%num_col && i == num_row-1); j++) {
+		for (var j = 0; (j < num_col && !(i == num_row-1)) || (j < imgs.length%num_col && i == num_row-1); j++) {
 			var col_div = document.createElement("div");
 			$(col_div).attr("class", "column");
 			var img = document.createElement("img");
@@ -78,18 +78,19 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-	var i;
 	var slides = document.getElementsByClassName("mySlides");
 	var dots = document.getElementsByClassName("demo");
 	var captionText = document.getElementById("caption");
-	if (n > slides.length) {slideIndex = 1}
-	if (n < 1) {slideIndex = slides.length}
-	for (i = 0; i < slides.length; i++) {
+	
+	if (n > slides.length)
+		slideIndex = 1;
+	if (n < 1)
+		slideIndex = slides.length;
+	for (var i = 0; i < slides.length; i++)
 		slides[i].style.display = "none";
-	}
-	for (i = 0; i < dots.length; i++) {
+	for (var i = 0; i < dots.length; i++)
 		dots[i].className = dots[i].className.replace(" active", "");
-	}
+	
 	slides[slideIndex-1].style.display = "block";
 	dots[slideIndex-1].className += " active";
 	captionText.innerHTML = dots[slideIndex-1].alt;
