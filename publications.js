@@ -20,6 +20,9 @@ window.onload = function(){
 	//add publications
 	load_publications();
 	
+	//clustrmaps
+	$("#map").html(map);
+	
 	// copyright
 	$("#copyright").html(copyright);
 }

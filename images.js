@@ -26,6 +26,9 @@ window.onload = function(){
 	// start slide show
 	showSlides(slideIndex);
 	
+	//clustrmaps
+	$("#map").html(map);
+	
 	// copyright
 	$("#copyright").html(copyright);
 }
