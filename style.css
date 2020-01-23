@@ -32,7 +32,7 @@ p {
 
 table, th, tr, td {
 	overflow: hidden;
-	//border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 .frame_table {
