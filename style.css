@@ -80,3 +80,9 @@ table, th, tr, td {
 	width: 100%; 
 	text-align:center;
 }
+
+#map {
+	//display: block;
+	width: 100%; 
+	text-align:center;
+}

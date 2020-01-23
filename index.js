@@ -70,6 +70,9 @@ window.onload = function(){
 	if (highschool_awards.length>0)
 		append_to_awards_table('<i>High School:</i>', highschool_awards);
 	
+	//clustrmaps
+	$("#map").html(map);
+	
 	// copyright
 	$("#copyright").html(copyright);
 }

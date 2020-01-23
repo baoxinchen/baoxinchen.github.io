@@ -212,6 +212,8 @@ var imgs = [
 		['./images/20170711_125230036_iOS.jpg',      'ICVS2017']
 		];
 
+var map = '<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=f4aa05&w=150&t=tt&d=Y_NzoJws4dLRWQ9in6tPR0qbMV2yXzsrk_Em9IKsQsA&co=ffffff&cmo=ff5353&cmn=3a3bcc"></script>'
+
 //google analytics personal link, [TODO: detele this part]
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
