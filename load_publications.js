@@ -37,19 +37,23 @@ function load_publications(){
 		html_text += '"<b>'+publications[i]['title']+'</b>"<br>';
 		
 		if (publications[i]['conf']!='')
-			html_text += publications[i]['conf']+'<br>';
+			html_text += publications[i]['conf'];
 		
 		if (publications[i]['info']!='')
-			html_text += '<i class="fa fa-info-circle" style="font-size:16px"></i> '+publications[i]['info']+'<br>';
+			html_text += '<table><tr><td><i class="fa fa-info-circle" style="font-size:16px"></i></td><td>'+publications[i]['info']+'</td></tr>';
 		
 		if (publications[i]['award']!='')
-			html_text += '<i class="fas fa-award" style="font-size:16px"></i> '+publications[i]['award']+'<br>';
+			html_text += '<tr><td><i class="fas fa-award" style="font-size:16px"></i></i></td><td>'+publications[i]['award']+'</td></tr></table>';
 		
 		if (!jQuery.isEmptyObject(publications[i]['links'])) {
-			html_text += '<i class="fa fa-hand-o-right" style="font-size:16px"></i> ';
+			html_text += '<table id="paper_icons_table"><tr><td><i class="fa fa-hand-o-right" style="font-size:16px"></i></td>';
 			for (L in publications[i]['links']) {
-				html_text += '<a href="'+publications[i]['links'][L]+'" target="_blank">'+L+'</a> '
+				if (publications[i]['links'][L] != '')
+					html_text += '<td><a href="'+publications[i]['links'][L]+'" target="_blank">'+L+'</a></td> '
+				else
+					html_text += '<td>'+L+'</a></td> '
 			}
+			html_text += '</tr></table>'
 		}
 		
 		$(paper_info_div).html(html_text)
