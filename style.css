@@ -82,7 +82,7 @@ table, th, tr, td {
 }
 
 #map {
-	//display: block;
+	display: block;
 	width: 100%; 
 	text-align:center;
 }
