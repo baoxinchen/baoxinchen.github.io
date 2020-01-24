@@ -3,7 +3,7 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
-var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.23/19:53pm <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
+var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.24/16:53pm <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
 var mypicture = './images/baoxinchen.jpg'; // this picture will display in the top left corner
 var name = 'Bao Xin Chen 陈宝新';
@@ -29,7 +29,7 @@ var info_links = [
 		];
 
 // co_author_list = {'author name': 'link', ...}
-// this autors will appear in variable "publications"
+// these autors will appear in variable "publications"
 var co_author_list = {
 	'Xing Zhao'            : 'http://www.cse.yorku.ca/~xingzhao/',
 	'Manos Papagelis'      : 'https://www.eecs.yorku.ca/~papaggel/',
@@ -45,7 +45,7 @@ var co_author_list = {
 	'Author\'s Name'       : 'This author\'s homepage link'
 };
 
-// publications is a list of json objects. 
+// "publications" is a list of json objects. 
 // If 'title' is empty, the entry will not display on the webpage.
 var publications = [
 		{'src'    : '', // image url, will display on the left side
@@ -85,7 +85,7 @@ var publications = [
 			'[poster]' : './publications/vot2019_poster.pdf',
 			'[cite]'   : './publications/fastVOT_arXiv_2019_citation.txt',
 			'[code]'   : 'https://github.com/baoxinchen/siammask_e',
-			'<iframe src="https://ghbtns.com/github-btn.html?user=baoxinchen&repo=siammask_e&type=star&count=true&size=small" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>' : ''
+			'<iframe src="https://ghbtns.com/github-btn.html?user=baoxinchen&repo=siammask_e&type=star&count=true&size=small" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>' : ''
 			}
 		},
 
@@ -216,7 +216,7 @@ var imgs = [
 // TODO: detele this part
 //clustrmaps
 var map = '<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=f4aa05&w=150&t=tt&d=Y_NzoJws4dLRWQ9in6tPR0qbMV2yXzsrk_Em9IKsQsA&co=ffffff&cmo=ff5353&cmn=3a3bcc"></script>';
-//google analytics personal link
+//google analytics link
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
