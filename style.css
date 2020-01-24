@@ -82,7 +82,7 @@ table, th, tr, td {
 }
 
 #paper_icons_table tr td {
-	padding: 0 0 0 0;
+	padding: 0px 0px 0px 0px;
 	vertical-align: top;
 }
 
