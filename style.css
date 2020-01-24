@@ -85,19 +85,19 @@ table, th, tr, td {
 	padding: 0px 2px 0px 2px;
 }
 
-#paper_icons_table tr td {
+#paper_links_table tr td {
 	padding: 0px 2px 0px 2px;
 	vertical-align: top;
 }
 
-#copyright {
-	font-size:12px; 
+#map {
+	display: none;
 	width: 100%; 
 	text-align:center;
 }
 
-#map {
-	display: none;
+#copyright {
+	font-size:12px; 
 	width: 100%; 
 	text-align:center;
 }
