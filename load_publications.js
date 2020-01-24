@@ -40,13 +40,13 @@ function load_publications(){
 			html_text += publications[i]['conf'];
 		
 		if (publications[i]['info']!='')
-			html_text += '<table id="paper_info_table"><tr><td style="width: 20px;"><i class="fa fa-info-circle" style="font-size:16px"></i></td><td>'+publications[i]['info']+'</td></tr>';
+			html_text += '<table id="paper_info_table"><tr><td style="width: 16px;"><i class="fa fa-info-circle" style="font-size:16px"></i></td><td>'+publications[i]['info']+'</td></tr>';
 		
 		if (publications[i]['award']!='')
 			html_text += '<tr><td><i class="fas fa-award" style="font-size:16px"></i></i></td><td>'+publications[i]['award']+'</td></tr></table>';
 		
 		if (!jQuery.isEmptyObject(publications[i]['links'])) {
-			html_text += '<table id="paper_links_table"><tr><td style="width: 20px;"><i class="fa fa-hand-o-right" style="font-size:16px"></i></td>';
+			html_text += '<table id="paper_links_table"><tr><td style="width: 16px;"><i class="fa fa-hand-o-right" style="font-size:16px"></i></td>';
 			for (L in publications[i]['links']) {
 				if (publications[i]['links'][L] != '')
 					html_text += '<td><a href="'+publications[i]['links'][L]+'" target="_blank">'+L+'</a></td> '
