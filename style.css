@@ -48,7 +48,7 @@ table, th, tr, td {
 
 #info_links tr td {
 	padding: 0px 2px 0px 2px;
-	vertical-align: center;
+	vertical-align: middle;
 }
 
 #name_block {
@@ -81,11 +81,14 @@ table, th, tr, td {
 	padding-left: 5px;
 }
 
-#paper_icons_table tr td {
-	padding: 0px 0px 0px 0px;
-	vertical-align: top;
+#paper_info_table tr td {
+	padding: 0px 2px 0px 2px;
 }
 
+#paper_icons_table tr td {
+	padding: 0px 2px 0px 2px;
+	vertical-align: top;
+}
 
 #copyright {
 	font-size:12px; 
