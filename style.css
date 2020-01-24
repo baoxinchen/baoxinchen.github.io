@@ -47,7 +47,7 @@ table, th, tr, td {
 }
 
 #info_links tr td {
-	padding: 0 2 0 0;
+	padding: 0px 2px 0px 2px;
 	vertical-align: center;
 }
 
