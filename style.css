@@ -36,7 +36,6 @@ p {
 }
 
 table, th, tr, td {
-	font-size: 16px;
 	overflow: hidden;
 	border-spacing: 0px;
 	/*border: 1px solid black;*/
@@ -84,14 +83,17 @@ table, th, tr, td {
 }
 
 .paper_info_div {
+	font-size: 16px;
 	padding-left: 5px;
 }
 
 .paper_info_table tr td {
+	font-size: 16px;
 	padding: 0px 2px 0px 2px;
 }
 
 .paper_links_table tr td {
+	font-size: 16px;
 	padding: 0px 2px 0px 2px;
 	vertical-align: top;
 }
