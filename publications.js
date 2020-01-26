@@ -1,10 +1,11 @@
 /*
 wrote by Bao Xin Chen
-https://baoxinchen.github.io/baoxinchen/
+https://baoxinchen.github.io/
 */
 
 window.onload = function(){
 	//set name and title
+	$("title").html(name + ' Publications');
 	$("#name_small").html(name);
 	$("#mytitle").html(mytitle);
 	

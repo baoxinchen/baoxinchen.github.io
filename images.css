@@ -1,6 +1,6 @@
 /*
 wrote by Bao Xin Chen
-https://baoxinchen.github.io/baoxinchen/
+https://baoxinchen.github.io/
 */
 
 * {
@@ -45,7 +45,6 @@ https://baoxinchen.github.io/baoxinchen/
 	font-size: 20px;
 	border-radius: 0px 3px 3px 0px;
 	user-select: none;
-	-webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -58,6 +57,7 @@ https://baoxinchen.github.io/baoxinchen/
 .prev:hover,
 .next:hover {
 	background-color: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
 }
 
 /* Number text (1/3 etc) */

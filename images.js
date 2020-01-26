@@ -1,12 +1,13 @@
 /*
 wrote by Bao Xin Chen
-https://baoxinchen.github.io/baoxinchen/
+https://baoxinchen.github.io/
 */
 			
 var slideIndex = 1;
 
 window.onload = function(){
 	//set name and title
+	$("title").html(name + ' Gallery');
 	$("#name_small").html(name);
 	$("#mytitle").html(mytitle);
 	
