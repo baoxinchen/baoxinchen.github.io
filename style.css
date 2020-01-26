@@ -3,7 +3,7 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
-html * {
+html {
 	font-size: 16px; 
 	font-family: Arial;
 }
@@ -101,7 +101,7 @@ table, th, tr, td {
 	text-align: center;
 }
 
-#copyright * {
+#copyright {
 	font-size: 12px; 
 	width: 100%; 
 	text-align: center;
