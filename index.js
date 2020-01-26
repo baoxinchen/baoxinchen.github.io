@@ -95,7 +95,7 @@ function append_to_table(tablename, arrayname){
 		if (arrayname[i] == '')
 			continue;
 		var tr = document.createElement('tr');
-		$(tr).attr('style', 'vertical-align:top;');
+		$(tr).attr('style', 'vertical-align: top;');
 		var td = document.createElement("td");
 		$(td).html('&#8921;');
 		$(tr).append(td);
