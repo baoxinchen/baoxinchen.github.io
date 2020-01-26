@@ -46,6 +46,7 @@ function set_images(imgs){
 		var img = document.createElement("img");
 		$(img).attr("class", "display");
 		$(img).attr("src", imgs[i][0]);
+		$(img).attr("alt", imgs[i][1]);
 		$(div).append(img);
 		$("#canvas").append(div);
 	}
