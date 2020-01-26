@@ -94,12 +94,12 @@ function append_to_table(tablename, arrayname){
 	for (var i = 0; i < arrayname.length; i++) {
 		if (arrayname[i] == '')
 			continue;
-		var tr = document.createElement("tr");
-		$(tr).attr("valign", "top");
+		var tr = document.createElement('tr');
+		$(tr).attr('style', 'vertical-align:top;');
 		var td = document.createElement("td");
-		$(td).html("&#8921;");
+		$(td).html('&#8921;');
 		$(tr).append(td);
-		var td = document.createElement("td");
+		var td = document.createElement('td');
 		$(td).html(arrayname[i]);
 		$(td).attr('style', 'padding-bottom: 5px;');
 		$(tr).append(td);
