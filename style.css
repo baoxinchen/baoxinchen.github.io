@@ -4,7 +4,7 @@ https://baoxinchen.github.io/baoxinchen/
 */
 
 html * {
-	font-size:16px; 
+	font-size: 16px; 
 	font-family: Arial !important;
 }
 
@@ -47,8 +47,8 @@ table, th, tr, td {
 }
 
 #info_links {
-	margin-left:auto;
-	margin-right:auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #info_links tr td {
@@ -61,7 +61,7 @@ table, th, tr, td {
 }
 
 #mypicture {
-	height:150px;
+	height: 150px;
 }
 
 #name {
@@ -98,11 +98,11 @@ table, th, tr, td {
 #map {
 	display: none;
 	width: 100%; 
-	text-align:center;
+	text-align: center;
 }
 
 #copyright {
-	font-size:12px; 
+	font-size: 12px; 
 	width: 100%; 
-	text-align:center;
+	text-align: center;
 }
