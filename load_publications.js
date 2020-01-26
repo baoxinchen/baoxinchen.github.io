@@ -1,6 +1,6 @@
 /*
 wrote by Bao Xin Chen
-https://baoxinchen.github.io/baoxinchen/
+https://baoxinchen.github.io/
 */
 
 function load_publications(){
