@@ -3,6 +3,11 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
+html * {
+	font-size:16px; 
+	font-family: Arial !important;
+}
+
 a:link {
 	color: black;
 	text-decoration: none;
