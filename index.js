@@ -19,7 +19,10 @@ window.onload = function(){
 	for (var i = 0; i < emails.length; i++) {
 		var tr = document.createElement("tr");
 		var td = document.createElement("td");
-		$(td).html("<i class='fas fa-envelope' style='font-size:16px'></i>");
+		var icon = document.createElement("i");
+		$(icon).addClass("fas fa-envelope");
+		$(icon).css("font-size", "16px");
+		$(td).append(icon);
 		$(tr).append(td);
 		var td = document.createElement("td");
 		$(td).html(emails[i]);
@@ -28,7 +31,10 @@ window.onload = function(){
 	}
 	var tr = document.createElement("tr");
 	var td = document.createElement("td");
-	$(td).html("<i class='fas fa-passport' style='font-size:16px'></i>");
+	var icon = document.createElement("i");
+	$(icon).addClass("fas fa-passport");
+	$(icon).css("font-size", "16px");
+	$(td).append(icon);
 	$(tr).append(td);
 	var td = document.createElement("td");
 	$(td).html(citizen);
@@ -43,12 +49,11 @@ window.onload = function(){
 	for (var i = 0; i < info_links.length; i++) {
 		var td = document.createElement("td");
 		var a  = document.createElement("a"); //add link
-		$(a).attr("class", "picture_link");
+		$(a).addClass("picture_link");
 		$(a).attr("href", info_links[i][1]);
 		$(a).attr("target", "_blank");
 		$(a).append(info_links[i][0]);//add icon
-		console.dir($(a).children()[0]);
-		$(a).children().eq(0).mouseover(inverseColor).mouseout(inverseColor);
+		$(a).children().eq(0).hover(inverseColor, inverseColor);
 		$(td).append(a);
 		$(tr).append(td);
 	}
@@ -64,15 +69,15 @@ window.onload = function(){
 	//add awards
 	// graduate
 	if (graduate_awards.length>0)
-		append_to_awards_table('<i>Graduate:</i>', graduate_awards);
+		append_to_awards_table('Graduate:', graduate_awards);
 	
 	// undergraduate
 	if (undergrad_awards.length>0)
-		append_to_awards_table('<i>Undergraduate:</i>', undergrad_awards);
+		append_to_awards_table('Undergraduate:', undergrad_awards);
 	
 	// high school
 	if (highschool_awards.length>0)
-		append_to_awards_table('<i>High School:</i>', highschool_awards);
+		append_to_awards_table('High School:', highschool_awards);
 	
 	//clustrmaps
 	$("#map").html(map);
@@ -86,7 +91,7 @@ function append_to_awards_table(school, arrayname){
 	$(tr).append(document.createElement("td"));
 	var td = document.createElement("td");
 	$(td).html(school);
-	$(td).attr('style', 'padding-bottom: 5px;');
+	$(td).css('padding-bottom', '5px');
 	$(tr).append(td);
 	$("#awards_table").append(tr);
 	
@@ -98,13 +103,13 @@ function append_to_table(tablename, arrayname){
 		if (arrayname[i] == '')
 			continue;
 		var tr = document.createElement('tr');
-		$(tr).attr('style', 'vertical-align: top;');
+		$(tr).css('vertical-align', 'top');
 		var td = document.createElement("td");
 		$(td).html('&#8921;');
 		$(tr).append(td);
 		var td = document.createElement('td');
 		$(td).html(arrayname[i]);
-		$(td).attr('style', 'padding-bottom: 5px;');
+		$(td).css('padding-bottom', '5px');
 		$(tr).append(td);
 		$(tablename).append(tr);
 	}

@@ -12,14 +12,13 @@ window.onload = function(){
 	$("#mytitle").html(mytitle);
 	
 	//set emails
-	var html_text = '';
 	for (var i = 0; i < emails.length; i++) {
-		html_text += '<i class="fas fa-envelope" style="font-size:16px"></i> ';
-		html_text += emails[i];
-		if (i < emails.length-1)
-			html_text += '; ';
+		var icon = document.createElement("i");
+		$(icon).addClass("fas fa-envelope");
+		$(icon).css("font-size", "16px");
+		$("#emails").append(icon);
+		$("#emails").append(document.createTextNode(emails[i]+((i < emails.length-1)?"; ":"")));
 	}
-	$("#emails").html(html_text);
 	
 	// add images
 	set_images(imgs);
@@ -38,13 +37,13 @@ function set_images(imgs){
 	//set canvas
 	for (var i = 0; i < imgs.length; i++) {
 		var div = document.createElement("div");
-		$(div).attr("class", "mySlides");
+		$(div).addClass("mySlides");
 		var num_text_div = document.createElement("div");
-		$(num_text_div).attr("class", "numbertext");
+		$(num_text_div).addClass("numbertext");
 		$(num_text_div).html((i+1)+" / "+imgs.length);
 		$(div).append(num_text_div);
 		var img = document.createElement("img");
-		$(img).attr("class", "display");
+		$(img).addClass("display");
 		$(img).attr("src", imgs[i][0]);
 		$(img).attr("alt", imgs[i][1]);
 		$(div).append(img);
@@ -56,12 +55,12 @@ function set_images(imgs){
 	var num_row = Math.floor(imgs.length / num_col)+1;
 	for (var i = 0; i < num_row; i++) {
 		var row_div = document.createElement("div");
-		$(row_div).attr("class", "row");
+		$(row_div).addClass("row");
 		for (var j = 0; (j < num_col && !(i == num_row-1)) || (j < imgs.length%num_col && i == num_row-1); j++) {
 			var col_div = document.createElement("div");
-			$(col_div).attr("class", "column");
+			$(col_div).addClass("column");
 			var img = document.createElement("img");
-			$(img).attr("class", "demo cursor");
+			$(img).addClass("demo cursor");
 			$(img).attr("src", imgs[i*num_col+j][0]);
 			$(img).attr("onclick", "currentSlide("+(i*num_col+j+1)+")");
 			$(img).attr("alt", imgs[i*num_col+j][1]);
@@ -83,20 +82,20 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-	var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("demo");
-	var captionText = document.getElementById("caption");
+	var slides = $(".mySlides");
+	var dots = $(".demo");
+	var captionText = $("#caption");
 	
 	if (n > slides.length)
 		slideIndex = 1;
 	if (n < 1)
 		slideIndex = slides.length;
 	for (var i = 0; i < slides.length; i++)
-		slides[i].style.display = "none";
+		slides.eq(i).css("display", "none");
 	for (var i = 0; i < dots.length; i++)
-		dots[i].className = dots[i].className.replace(" active", "");
-	
-	slides[slideIndex-1].style.display = "block";
-	dots[slideIndex-1].className += " active";
-	captionText.innerHTML = dots[slideIndex-1].alt;
+		dots.eq(i).removeClass("active");
+		
+	slides.eq(slideIndex-1).css("display", "block");
+	dots.eq(slideIndex-1).addClass("active");
+	captionText.html(dots[slideIndex-1].alt);
 }

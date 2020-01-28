@@ -14,12 +14,13 @@ function load_publications(){
 		var img = document.createElement("img");
 		$(img).attr('src',publications[i]['src']);
 		$(img).attr('alt',publications[i]['alt']);
-		$(img).attr('style','width:100px;height:100px;');
+		$(img).css({'width':'100px','height':'100px;'});
+		//$(img).hover(inverseColor,inverseColor);
 		$(td).append(img);
 		$(tr).append(td);
 		var td = document.createElement("td");
 		var paper_info_div = document.createElement("div");
-		$(paper_info_div).attr('class', 'paper_info_div');
+		$(paper_info_div).addClass('paper_info_div');
 		var html_text = '';
 		
 		var authors = publications[i]['authors'];
@@ -66,7 +67,7 @@ function load_publications(){
 		var tr = document.createElement("tr");
 		var td = document.createElement("td");
 		$(td).attr('colspan','2');
-		$(td).attr('style','height:20px;');
+		$(td).css('height', '20px');
 		$(tr).append(td);
 		$('#publications_table').append(tr);
 	}

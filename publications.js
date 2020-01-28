@@ -10,14 +10,14 @@ window.onload = function(){
 	$("#mytitle").html(mytitle);
 	
 	//set emails
-	var html_text = '';
 	for (var i = 0; i < emails.length; i++) {
-		html_text += '<i class="fas fa-envelope" style="font-size:16px"></i> ';
-		html_text += emails[i];
-		if (i < emails.length-1)
-			html_text += '; ';
+		var icon = document.createElement("i");
+		$(icon).addClass("fas fa-envelope");
+		$(icon).css("font-size", "16px");
+		$("#emails").append(icon);
+		$("#emails").append(document.createTextNode(emails[i]+((i < emails.length-1)?"; ":"")));
 	}
-	$("#emails").html(html_text);
+	
 	//add publications
 	load_publications();
 	
