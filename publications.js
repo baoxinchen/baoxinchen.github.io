@@ -6,7 +6,7 @@ https://baoxinchen.github.io/
 window.onload = function(){
 	//set name and title
 	$("title").html(name + ' Publications');
-	$("#name_small").html(name);
+	$("#name_small").children("a").html(name);
 	$("#mytitle").html(mytitle);
 	
 	//set emails

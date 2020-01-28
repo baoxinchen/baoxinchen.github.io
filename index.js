@@ -43,9 +43,13 @@ window.onload = function(){
 	for (var i = 0; i < info_links.length; i++) {
 		var td = document.createElement("td");
 		var a  = document.createElement("a"); //add link
+		$(a).attr("class", "picture_link");
 		$(a).attr("href", info_links[i][1]);
 		$(a).attr("target", "_blank");
 		$(a).append(info_links[i][0]);//add icon
+		console.dir($(a).children()[0]);
+		$(a).children().eq(0).mouseover(inverseColor);
+		$(a).children().eq(0).mouseout(inverseColor);
 		$(td).append(a);
 		$(tr).append(td);
 	}
@@ -106,3 +110,12 @@ function append_to_table(tablename, arrayname){
 		$(tablename).append(tr);
 	}
 }
+
+function inverseColor(){
+	//console.dir($(this).css('filter'));
+	if ($(this).css('filter') != 'invert(1)')
+		$(this).css('filter', 'invert(1)');
+	else
+		$(this).css('filter', 'invert(0)');
+}
+
