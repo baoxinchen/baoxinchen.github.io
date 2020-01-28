@@ -19,13 +19,13 @@ var aboutme = 'I recently completed the Master of Science degree at <a href="htt
 // e.g., github, linkedin, youtube, google scholar, etc.
 var info_links = [
 		['<img src="./images/icon_cv.png" alt="CV" style="height:28px; vertical-align: bottom;">', './files/cv.pdf'],
-		['<img src="./images/icon_transcript_uoft2.png" alt="TranscriptUofT" style="height:28px; vertical-align: bottom;">', './files/transcriptUT.pdf'],
-		['<img src="./images/icon_transcript_yorku2.png" alt="TranscriptYorkU" style="height:28px; vertical-align: bottom;">', './files/transcriptYU.pdf'],
-		['<i class="fa fa-linkedin-square" style="font-size:33px; vertical-align: bottom;"></i>', 'https://www.linkedin.com/in/baoxinchen'],
-		['<i class="fa fa-youtube-square" style="font-size:33px; vertical-align: bottom;"></i>', 'https://www.youtube.com/channel/UCe4C3FN8R0iWdbt3hEoNJfQ/playlists'],
-		['<i class="fa fa-github-square" style="font-size:33px; vertical-align: bottom;"></i>', 'https://github.com/baoxinchen'],
-		['<i class="fab fa-researchgate" style="font-size:32px; vertical-align: bottom;"></i>', 'https://www.researchgate.net/profile/Bao_Xin_Chen'],
-		['<i class="fas fa-user-graduate" style="font-size:28px; vertical-align: bottom;"></i>', 'https://scholar.google.ca/citations?user=&user=tnaBlxIAAAAJ']
+		['<img src="./images/icon_transcript_uoft.png" alt="TranscriptUofT" style="height:28px; vertical-align: bottom;">', './files/transcriptUT.pdf'],
+		['<img src="./images/icon_transcript_yorku.png" alt="TranscriptYorkU" style="height:28px; vertical-align: bottom;">', './files/transcriptYU.pdf'],
+		['<img src="./images/icon_linkedin.png" alt="Linkedin" style="height:28px; vertical-align: bottom;">', 'https://www.linkedin.com/in/baoxinchen'],
+		['<img src="./images/icon_youtube.png" alt="YouTube" style="height:28px; vertical-align: bottom;">', 'https://www.youtube.com/channel/UCe4C3FN8R0iWdbt3hEoNJfQ/playlists'],
+		['<img src="./images/icon_github.png" alt="GitHub" style="height:28px; vertical-align: bottom;">', 'https://github.com/baoxinchen'],
+		['<img src="./images/icon_research.png" alt="ResearchGate" style="height:28px; vertical-align: bottom;">', 'https://www.researchgate.net/profile/Bao_Xin_Chen'],
+		['<img src="./images/icon_scholar.png" alt="GoogleScholar" style="height:28px; vertical-align: bottom;">', 'https://scholar.google.ca/citations?user=&user=tnaBlxIAAAAJ']
 		];
 
 // co_author_list = {'author name': 'link', ...}

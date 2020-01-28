@@ -48,8 +48,7 @@ window.onload = function(){
 		$(a).attr("target", "_blank");
 		$(a).append(info_links[i][0]);//add icon
 		console.dir($(a).children()[0]);
-		$(a).children().eq(0).mouseover(inverseColor);
-		$(a).children().eq(0).mouseout(inverseColor);
+		$(a).children().eq(0).mouseover(inverseColor).mouseout(inverseColor);
 		$(td).append(a);
 		$(tr).append(td);
 	}
