@@ -29,7 +29,7 @@ a:hover, a:active {
 
 p {
 	text-align: justify;
-	margin: 0px 0px 0px 0px;
+	margin: 0px;
 }
 
 .frame_div {
@@ -68,6 +68,14 @@ table, th, tr, td {
 
 #mypicture {
 	height: 150px;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+#mypicture:hover {
+	border: 2px solid black;
+	border-radius: 10px;
 }
 
 #name {
@@ -94,11 +102,12 @@ table, th, tr, td {
 
 .paper_info_table tr td {
 	padding: 0px 3px 0px 3px;
+	/*vertical-align: middle;*/
 }
 
 .paper_links_table tr td {
 	padding: 0px 3px 0px 3px;
-	vertical-align: top;
+	/*vertical-align: middle;*/
 }
 
 #map {

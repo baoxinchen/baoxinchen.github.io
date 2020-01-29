@@ -30,7 +30,7 @@ function load_publications(){
 			if (co_author_list[authors[j]] != '' && j < authors.length-1) {
 				var a = $('<a></a>');
 				$(a).attr('href', co_author_list[authors[j]]).attr('target', "_blank");
-				$(a).html(authors[j]);
+				$(a).html($('<span></span>').html(authors[j]));
 				$(paper_info_div).append(a);
 				$(paper_info_div).append($("<span></span>").html(', '));
 			}
@@ -41,7 +41,7 @@ function load_publications(){
 				$(paper_info_div).append($("<span></span>").html('and '));
 				var a = $('<a></a>');
 				$(a).attr('href', co_author_list[authors[j]]).attr('target', "_blank");
-				$(a).html(authors[j]);
+				$(a).html($('<span></span>').html(authors[j]));
 				$(paper_info_div).append(a);
 				$(paper_info_div).append($("<span></span>").html('<br>'));
 			}
@@ -69,7 +69,7 @@ function load_publications(){
 			$(td).append(icon);
 			$(tr).append(td);
 			var td = $('<td></td>');
-			$(td).html(publications[i]['info']);
+			$(td).html($('<span></span>').html(publications[i]['info']));
 			$(tr).append(td);
 			$(table).append(tr);
 			$(paper_info_div).append(table);	
@@ -88,7 +88,7 @@ function load_publications(){
 			$(td).append(icon);
 			$(tr).append(td);
 			var td = $('<td></td>');
-			$(td).html(publications[i]['award']);
+			$(td).html($('<span></span>').html(publications[i]['award']));
 			$(tr).append(td);
 			$(table).append(tr);
 			$(paper_info_div).append(table);
@@ -112,12 +112,12 @@ function load_publications(){
 					var td = $('<td></td>');
 					var a = $('<a></a>');
 					$(a).attr('href', publications[i]['links'][L]).attr('target', "_blank");
-					$(a).html(L);
+					$(a).html($('<span></span>').html(L));
 					$(td).append(a);
 				}
 				else {
 					var td = $('<td></td>');
-					$(td).html(L);
+					$(td).html($('<span></span>').html(L));
 				}
 				$(tr).append(td);
 			}
