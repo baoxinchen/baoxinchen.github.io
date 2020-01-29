@@ -20,6 +20,7 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+/* all kind of pictures with links */
 .picture_link:hover, .picture_link:active {
 	background:white;
 	color:black;
@@ -53,7 +54,11 @@ table, th, tr, td {
 }
 
 #info_links tr td {
-	padding: 0px 2px 0px 2px;
+	padding: 0px 3px 0px 3px;
+}
+
+.info_link_icon {
+	height: 32px;
 	vertical-align: middle;
 }
 
@@ -72,13 +77,13 @@ table, th, tr, td {
 }
 
 #name_small {
-	font-size: 26px;
+	font-size: 20px;
 	font-weight: bold;
 	padding-bottom: 5px;
 }
 
 #mytitle {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
 	padding-bottom: 5px;
 }
@@ -88,11 +93,11 @@ table, th, tr, td {
 }
 
 .paper_info_table tr td {
-	padding: 0px 2px 0px 2px;
+	padding: 0px 3px 0px 3px;
 }
 
 .paper_links_table tr td {
-	padding: 0px 2px 0px 2px;
+	padding: 0px 3px 0px 3px;
 	vertical-align: top;
 }
 

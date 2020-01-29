@@ -11,11 +11,13 @@ window.onload = function(){
 	
 	//set emails
 	for (var i = 0; i < emails.length; i++) {
-		var icon = document.createElement("i");
+		var icon = $('<i></i>');
 		$(icon).addClass("fas fa-envelope");
 		$(icon).css("font-size", "16px");
 		$("#emails").append(icon);
-		$("#emails").append(document.createTextNode(emails[i]+((i < emails.length-1)?"; ":"")));
+		var span = $('<span></span>');
+		$(span).html(' '+emails[i]+((i < emails.length-1)?'; ':''));
+		$("#emails").append(span);
 	}
 	
 	//add publications

@@ -3,7 +3,7 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
-var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.26/5:33am <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
+var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.08/15:33pm <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
 var mypicture = './images/baoxinchen.jpg'; // this picture will display in the top left corner
 var name = 'Bao Xin Chen 陈宝新';
@@ -13,22 +13,42 @@ var emails = ['baox[last name][at]cse[dot]yorku[dot]ca',
 		'baoxin[dot][last name][at]outlook[dot]com'];
 var citizen = 'Country of Citizenship: Canada <i class="fab fa-canadian-maple-leaf" style="font-size:16px"></i>';
 
-var aboutme = 'I recently completed the Master of Science degree at <a href="http://eecs.lassonde.yorku.ca/" target="_blank">York University Electrical Engineering and Computer Science (EECS)</a> department (2016 - 2019) under <a href="http://jtl.lassonde.yorku.ca/" target="_blank">Professor John K. Tsotsos\'</a> supervision. Previously, I earned a Bachelor of Science degree from <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a> computer science department. My focus was on Machine Learning and Computer Vision (2012 - 2016). My current research interest is in <b>Robot Vision</b> (real-time computer vision and machine learning applications on mobile platforms).';
+var aboutme = 'I recently completed the Master of Science degree at York University Electrical Engineering and Computer Science (EECS) department (2016 - 2019) under Professor John K. Tsotsos\' supervision. Previously, I earned a Bachelor of Science degree from University of Toronto computer science department. My focus was on Machine Learning and Computer Vision (2012 - 2016). My current research interest is in <b>Robot Vision</b> (real-time computer vision and machine learning applications on mobile platforms).';
 
-// info_links = [[icon,link], ...]
+// info_links = [{src,alt,url}, ...]
 // e.g., github, linkedin, youtube, google scholar, etc.
+// **empty url will be skipped
 var info_links = [
-		['<img src="./images/icon_cv.png" alt="CV" style="height:28px;">', './files/cv.pdf'],
-		['<img src="./images/icon_transcript_uoft.png" alt="TranscriptUofT" style="height:28px;">', './files/transcriptUT.pdf'],
-		['<img src="./images/icon_transcript_yorku.png" alt="TranscriptYorkU" style="height:28px;">', './files/transcriptYU.pdf'],
-		['<img src="./images/icon_linkedin.png" alt="Linkedin" style="height:28px;">', 'https://www.linkedin.com/in/baoxinchen'],
-		['<img src="./images/icon_youtube.png" alt="YouTube" style="height:28px;">', 'https://www.youtube.com/channel/UCe4C3FN8R0iWdbt3hEoNJfQ/playlists'],
-		['<img src="./images/icon_github.png" alt="GitHub" style="height:28px;">', 'https://github.com/baoxinchen'],
-		['<img src="./images/icon_research.png" alt="ResearchGate" style="height:28px;">', 'https://www.researchgate.net/profile/Bao_Xin_Chen'],
-		['<img src="./images/icon_scholar.png" alt="GoogleScholar" style="height:28px;">', 'https://scholar.google.ca/citations?user=&user=tnaBlxIAAAAJ']
+		{'src' : './images/icon_cv.png', 
+		'alt'  : 'CV', 
+		'url'  : './files/cv.pdf'},
+		{'src' : './images/icon_transcript_uoft.png', 
+		'alt'  : 'TranscriptUofT', 
+		'url'  : './files/transcriptUT.pdf'},
+		{'src' : './images/icon_transcript_yorku.png', 
+		'alt'  : 'TranscriptYorkU', 
+		'url'  : './files/transcriptYU.pdf'},
+		{'src' : './images/icon_linkedin.png', 
+		'alt'  : 'Linkedin', 
+		'url'  : 'https://www.linkedin.com/in/baoxinchen'},
+		{'src' : './images/icon_youtube.png', 
+		'alt'  : 'YouTube', 
+		'url'  : 'https://www.youtube.com/channel/UCe4C3FN8R0iWdbt3hEoNJfQ/playlists'},
+		{'src' : './images/icon_twitter.png', 
+		'alt'  : 'Twitter', 
+		'url'  : ''},
+		{'src' : './images/icon_github.png', 
+		'alt'  : 'GitHub', 
+		'url'  : 'https://github.com/baoxinchen'},
+		{'src' : './images/icon_research.png', 
+		'alt'  : 'ResearchGate', 
+		'url'  : 'https://www.researchgate.net/profile/Bao_Xin_Chen'},
+		{'src' : './images/icon_scholar.png', 
+		'alt'  : 'GoogleScholar', 
+		'url'  : 'https://scholar.google.ca/citations?user=&user=tnaBlxIAAAAJ'}
 		];
 
-// co_author_list = {'author name': 'link', ...}
+// co_author_list = {'name': 'link', ...}
 // these autors will appear in variable "publications"
 var co_author_list = {
 	'Xing Zhao'            : 'http://www.cse.yorku.ca/~xingzhao/',
@@ -40,10 +60,9 @@ var co_author_list = {
 	'Raghavender Sahdev'   : 'http://www.raghavendersahdev.com/',
 	'Raghavender Sahdev*'  : 'http://www.raghavendersahdev.com/',
 	'Dekun Wu'             : 'https://jackwu502.github.io/',
-	'<b>Bao Xin Chen</b>'  : '',
-	'<b>Bao Xin Chen</b>*' : '',
-	'Author\'s Name'       : 'This author\'s homepage link'
-};
+	'<b>Bao Xin Chen</b>'  : 'https://baoxinchen.github.io/',
+	'<b>Bao Xin Chen</b>*' : 'https://baoxinchen.github.io/'
+	};
 
 // "publications" is a list of json objects. 
 // If 'title' is empty, the entry will not display on the webpage.

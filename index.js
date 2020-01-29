@@ -17,26 +17,26 @@ window.onload = function(){
 	
 	//set email and citizen
 	for (var i = 0; i < emails.length; i++) {
-		var tr = document.createElement("tr");
-		var td = document.createElement("td");
-		var icon = document.createElement("i");
+		var tr = $('<tr></tr>');
+		var td = $('<td></td>');
+		var icon = $('<i></i>');
 		$(icon).addClass("fas fa-envelope");
 		$(icon).css("font-size", "16px");
 		$(td).append(icon);
 		$(tr).append(td);
-		var td = document.createElement("td");
+		var td = $('<td></td>');
 		$(td).html(emails[i]);
 		$(tr).append(td);
 		$("#email_citizen").append(tr);
 	}
-	var tr = document.createElement("tr");
-	var td = document.createElement("td");
-	var icon = document.createElement("i");
+	var tr = $('<tr></tr>');
+	var td = $('<td></td>');
+	var icon = $('<i></i>');
 	$(icon).addClass("fas fa-passport");
 	$(icon).css("font-size", "16px");
 	$(td).append(icon);
 	$(tr).append(td);
-	var td = document.createElement("td");
+	var td = $('<td></td>');
 	$(td).html(citizen);
 	$(tr).append(td);
 	$("#email_citizen").append(tr);
@@ -45,15 +45,23 @@ window.onload = function(){
 	$("#aboutme").html(aboutme);
 	
 	//add info links
-	var tr = document.createElement("tr");
+	var tr = $('<tr></tr>');
 	for (var i = 0; i < info_links.length; i++) {
-		var td = document.createElement("td");
-		var a  = document.createElement("a"); //add link
+		if (info_links[i]["url"]=='')
+			continue; //skip empty url entries
+		var td = $('<td></td>');
+		var a  = $('<a></a>'); //add link
 		$(a).addClass("picture_link");
-		$(a).attr("href", info_links[i][1]);
+		$(a).attr("href", info_links[i]["url"]);
 		$(a).attr("target", "_blank");
-		$(a).append(info_links[i][0]);//add icon
-		$(a).children().eq(0).hover(inverseColor, inverseColor);
+		
+		var icon  = $('<img>');
+		$(icon).addClass("info_link_icon");
+		$(icon).attr("src", info_links[i]["src"]);
+		$(icon).attr("alt", info_links[i]["alt"]);
+		$(icon).hover(inverseColor, inverseColor);
+		
+		$(a).append(icon);//add icon
 		$(td).append(a);
 		$(tr).append(td);
 	}
@@ -65,7 +73,6 @@ window.onload = function(){
 	//add activities
 	append_to_table("#activities_table", activities);
 
-	
 	//add awards
 	// graduate
 	if (graduate_awards.length>0)
@@ -87,9 +94,9 @@ window.onload = function(){
 }
 
 function append_to_awards_table(school, arrayname){
-	var tr = document.createElement("tr");
-	$(tr).append(document.createElement("td"));
-	var td = document.createElement("td");
+	var tr = $('<tr></tr>');
+	$(tr).append($('<td></td>'));
+	var td = $('<td></td>');
 	$(td).html(school);
 	$(td).css('padding-bottom', '5px');
 	$(tr).append(td);
@@ -102,12 +109,12 @@ function append_to_table(tablename, arrayname){
 	for (var i = 0; i < arrayname.length; i++) {
 		if (arrayname[i] == '')
 			continue;
-		var tr = document.createElement('tr');
+		var tr = $('<tr></tr>');
 		$(tr).css('vertical-align', 'top');
-		var td = document.createElement("td");
+		var td = $('<td></td>');
 		$(td).html('&#8921;');
 		$(tr).append(td);
-		var td = document.createElement('td');
+		var td = $('<td></td>');
 		$(td).html(arrayname[i]);
 		$(td).css('padding-bottom', '5px');
 		$(tr).append(td);
