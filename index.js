@@ -76,15 +76,15 @@ window.onload = function(){
 	//add awards
 	// graduate
 	if (graduate_awards.length>0)
-		append_to_awards_table('Graduate:', graduate_awards);
+		append_to_awards_table('<i>Graduate:</i>', graduate_awards);
 	
 	// undergraduate
 	if (undergrad_awards.length>0)
-		append_to_awards_table('Undergraduate:', undergrad_awards);
+		append_to_awards_table('<i>Undergraduate:</i>', undergrad_awards);
 	
 	// high school
 	if (highschool_awards.length>0)
-		append_to_awards_table('High School:', highschool_awards);
+		append_to_awards_table('<i>High School:</i>', highschool_awards);
 	
 	//clustrmaps
 	$("#map").html(map);
