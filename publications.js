@@ -13,7 +13,7 @@ window.onload = function(){
 	for (var i = 0; i < emails.length; i++) {
 		var icon = $('<i></i>');
 		$(icon).addClass("fas fa-envelope");
-		$(icon).css("font-size", "16px");
+		//$(icon).css("font-size", "16px");
 		$("#emails").append(icon);
 		var span = $('<span></span>');
 		$(span).html(' '+emails[i]+((i < emails.length-1)?'; ':''));

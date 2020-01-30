@@ -95,7 +95,7 @@ a:hover, a:active {
 }
 
 #mytitle {
-	font-size: 16px;
+	/*font-size: 16px;*/
 	font-weight: bold;
 	padding-bottom: 5px;
 }
@@ -104,7 +104,7 @@ a:hover, a:active {
 	padding-left: 5px;
 }
 
-.paper_info_icon_span {
+.paper_info_icon_span, .icon_span {
 	display: inline-block;
 	width: 19px;
 	/*vertical-align: middle;*/

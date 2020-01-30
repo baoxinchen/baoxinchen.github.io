@@ -67,7 +67,7 @@ function load_publications(){
 			$(icon_span).addClass("paper_info_icon_span");
 			var icon = $('<i></i>');
 			$(icon).addClass('fa fa-info-circle');
-			$(icon).css('font-size', '16px');
+			//$(icon).css('font-size', '16px');
 			$(icon_span).append(icon);
 			$(info_p).append(icon_span);
 			var span = $('<span></span>').html(publications[i]['info']);
@@ -82,7 +82,7 @@ function load_publications(){
 			$(icon_span).addClass("paper_info_icon_span");
 			var icon = $('<i></i>');
 			$(icon).addClass('fas fa-award');
-			$(icon).css('font-size', '16px');
+			//$(icon).css('font-size', '16px');
 			$(icon_span).append(icon);
 			$(award_p).append(icon_span);
 			var span = $('<span></span>').html(publications[i]['award']);
@@ -97,7 +97,7 @@ function load_publications(){
 			$(icon_span).addClass("paper_info_icon_span");
 			var icon = $('<i></i>');
 			$(icon).addClass('fa fa-hand-o-right');
-			$(icon).css('font-size', '16px');
+			//$(icon).css('font-size', '16px');
 			$(icon_span).append(icon);
 			$(links_p).append(icon_span);
 			

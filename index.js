@@ -17,29 +17,31 @@ window.onload = function(){
 	
 	//set email and citizen
 	for (var i = 0; i < emails.length; i++) {
-		var tr = $('<tr></tr>');
-		var td = $('<td></td>');
+		var email_p = $('<p></p>');
+		var icon_span = $('<span></span>');
+		$(icon_span).addClass('icon_span');
 		var icon = $('<i></i>');
 		$(icon).addClass("fas fa-envelope");
-		$(icon).css("font-size", "16px");
-		$(td).append(icon);
-		$(tr).append(td);
-		var td = $('<td></td>');
-		$(td).html(emails[i]);
-		$(tr).append(td);
-		$("#email_citizen").append(tr);
+		//$(icon).css("font-size", "16px");
+		$(icon_span).append(icon);
+		$(email_p).append(icon_span);
+		var span = $('<span></span>');
+		$(span).html(emails[i]);
+		$(email_p).append(span);
+		$("#name_block").append(email_p);
 	}
-	var tr = $('<tr></tr>');
-	var td = $('<td></td>');
+	var citi_p = $('<p></p>');
+	var icon_span = $('<span></span>');
+	$(icon_span).addClass('icon_span');
 	var icon = $('<i></i>');
 	$(icon).addClass("fas fa-passport");
-	$(icon).css("font-size", "16px");
-	$(td).append(icon);
-	$(tr).append(td);
-	var td = $('<td></td>');
-	$(td).html(citizen);
-	$(tr).append(td);
-	$("#email_citizen").append(tr);
+	//$(icon).css("font-size", "16px");
+	$(icon_span).append(icon);
+	$(citi_p).append(icon_span);
+	var span = $('<span></span>');
+	$(span).html(citizen);
+	$(citi_p).append(span);
+	$("#name_block").append(citi_p);
 	
 	//set text for about me
 	$("#aboutme").html(aboutme);
