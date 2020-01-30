@@ -234,7 +234,7 @@ var imgs = [
 
 // TODO: detele this part
 //clustrmaps
-var map = '<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=tt&d=ej6nfX5t2pj3qpe5cSfROWfYEqK2H-w6xX2su2R96ls&co=9d9d9d&ct=ffffff&cmo=ffffff&cmn=ffffff"></script>';
+var map = '<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=250&t=tt&d=ej6nfX5t2pj3qpe5cSfROWfYEqK2H-w6xX2su2R96ls&co=000000&cmo=000000&cmn=000000&ct=ffffff"></script>';
 
 //google analytics link
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
