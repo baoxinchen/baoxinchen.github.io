@@ -21,106 +21,102 @@ function load_publications(){
 		
 		// authors, title, conference, information, award, links
 		var parent_td = $('<td></td>');
+		$(parent_td).addClass('paper_info_cell');
 		
 		// add authors
 		var authors = publications[i]['authors'];
+		var authors_p = $('<p></p>');
 		for (var j = 0; j < authors.length; j++) {
 			if (co_author_list[authors[j]] != '' && j < authors.length-1) {
 				var a = $('<a></a>');
 				$(a).attr('href', co_author_list[authors[j]]).attr('target', "_blank");
-				$(a).html($('<span></span>').html(authors[j]));
-				$(parent_td).append(a);
-				$(parent_td).append($("<span></span>").html(', '));
+				$(a).html(authors[j]);
+				$(authors_p).append(a);
+				$(authors_p).append($("<span></span>").html(', '));
 			}
 			else if (co_author_list[authors[j]] == '' && j < authors.length-1) {
-				$(parent_td).append($("<span></span>").html(authors[j]+', '));
+				$(authors_p).append($("<span></span>").html(authors[j]+', '));
 			}
 			else if (co_author_list[authors[j]] != '' && j == authors.length-1) {
-				$(parent_td).append($("<span></span>").html('and '));
+				$(authors_p).append($("<span></span>").html('and '));
 				var a = $('<a></a>');
 				$(a).attr('href', co_author_list[authors[j]]).attr('target', "_blank");
-				$(a).html($('<span></span>').html(authors[j]));
-				$(parent_td).append(a);
-				$(parent_td).append($("<span></span>").html('<br>'));
+				$(a).html(authors[j]);
+				$(authors_p).append(a);
 			}
 			else {
-				$(parent_td).append($("<span></span>").html('and '+authors[j]+'<br>'));
+				$(authors_p).append($("<span></span>").html('and '+authors[j]));
 			}
 		}
+		$(parent_td).append(authors_p)
 		
 		// add paper title
-		$(parent_td).append($("<span></span>").html('"<b>'+publications[i]['title']+'</b>"<br>'));
+		var title_p = $('<p></p>');
+		$(title_p).append('"<b>'+publications[i]['title']+'</b>"');
+		$(parent_td).append(title_p)
 		
-		//add conference information
-		$(parent_td).append($("<span></span>").html(publications[i]['conf']));
+		//add conference
+		var conf_p = $('<p></p>');
+		$(conf_p).append(publications[i]['conf']);
+		$(parent_td).append(conf_p);
 		
 		// information icon
 		if (publications[i]['info']!='') {
-			var table = $('<table></table>');
-			$(table).addClass("paper_info_table");
-			var tr = $('<tr></tr>');
-			var td = $('<td></td>');
-			$(td).css('width', '16px');
+			var info_p = $('<p></p>');
+			var icon_span = $('<span></span>');
+			$(icon_span).addClass("paper_info_icon_span");
 			var icon = $('<i></i>');
 			$(icon).addClass('fa fa-info-circle');
 			$(icon).css('font-size', '16px');
-			$(td).append(icon);
-			$(tr).append(td);
-			var td = $('<td></td>');
-			$(td).html($('<span></span>').html(publications[i]['info']));
-			$(tr).append(td);
-			$(table).append(tr);
-			$(parent_td).append(table);	
+			$(icon_span).append(icon);
+			$(info_p).append(icon_span);
+			var span = $('<span></span>').html(publications[i]['info']);
+			$(info_p).append(span);
+			$(parent_td).append(info_p);
 		}
 		
 		//award icon
 		if (publications[i]['award']!='') {
-			var table = $('<table></table>');
-			$(table).addClass("paper_info_table");
-			var tr = $('<tr></tr>');
-			var td = $('<td></td>');
-			$(td).css('width', '16px');
+			var award_p = $('<p></p>');
+			var icon_span = $('<span></span>');
+			$(icon_span).addClass("paper_info_icon_span");
 			var icon = $('<i></i>');
 			$(icon).addClass('fas fa-award');
 			$(icon).css('font-size', '16px');
-			$(td).append(icon);
-			$(tr).append(td);
-			var td = $('<td></td>');
-			$(td).html($('<span></span>').html(publications[i]['award']));
-			$(tr).append(td);
-			$(table).append(tr);
-			$(parent_td).append(table);
+			$(icon_span).append(icon);
+			$(award_p).append(icon_span);
+			var span = $('<span></span>').html(publications[i]['award']);
+			$(award_p).append(span);
+			$(parent_td).append(award_p);
 		}
 		
 		//paper links
 		if (!jQuery.isEmptyObject(publications[i]['links'])) { 
-			var table = $('<table></table>');
-			$(table).addClass("paper_links_table");
-			var tr = $('<tr></tr>');
-			var td = $('<td></td>');
-			$(td).css('width', '16px');
+			var links_p = $('<p></p>');
+			var icon_span = $('<span></span>');
+			$(icon_span).addClass("paper_info_icon_span");
 			var icon = $('<i></i>');
 			$(icon).addClass('fa fa-hand-o-right');
 			$(icon).css('font-size', '16px');
-			$(td).append(icon);
-			$(tr).append(td);
+			$(icon_span).append(icon);
+			$(links_p).append(icon_span);
+			
 			
 			for (L in publications[i]['links']) {
+				var span = $('<span></span>');
+				$(span).addClass("paper_links_span");
 				if (publications[i]['links'][L] != '') {
-					var td = $('<td></td>');
 					var a = $('<a></a>');
 					$(a).attr('href', publications[i]['links'][L]).attr('target', "_blank");
-					$(a).html($('<span></span>').html(L));
-					$(td).append(a);
+					$(a).html(L);
+					$(span).append(a);
 				}
 				else {
-					var td = $('<td></td>');
-					$(td).html($('<span></span>').html(L));
+					$(span).html(L);
 				}
-				$(tr).append(td);
+				$(links_p).append(span);
 			}
-			$(table).append(tr);
-			$(parent_td).append(table);
+			$(parent_td).append(links_p);
 		}
 		
 		//$(parent_td).html(paper_info_div);

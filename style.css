@@ -8,13 +8,15 @@ html {
 	font-family: Arial;
 }
 
-span {
-	font-size: 16px;
+table, th, tr, td {
+	overflow: hidden;
+	border-spacing: 0px;
+	/*border: 1px solid black;*/
 }
 
 p {
-	text-align: justify;
 	margin: 0px;
+	padding: 0px;
 }
 
 a:link, a:visited {
@@ -29,6 +31,10 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+#aboutme, #activities_table tr td, #awards_table tr td {
+	text-align: justify;
+}
+
 /* all kind of pictures with links */
 .picture_link:hover, .picture_link:active {
 	background:white;
@@ -39,12 +45,6 @@ a:hover, a:active {
 .frame_div {
 	max-width: 800px;
 	margin: auto auto;
-}
-
-table, th, tr, td {
-	overflow: hidden;
-	border-spacing: 0px;
-	/*border: 1px solid black;*/
 }
 
 .frame_table {
@@ -100,17 +100,18 @@ table, th, tr, td {
 	padding-bottom: 5px;
 }
 
-.paper_info_div {
+.paper_info_cell {
 	padding-left: 5px;
 }
 
-.paper_info_table tr td {
-	padding: 0px 3px 0px 3px;
+.paper_info_icon_span {
+	display: inline-block;
+	width: 19px;
 	/*vertical-align: middle;*/
 }
 
-.paper_links_table tr td {
-	padding: 0px 3px 0px 3px;
+.paper_links_span {
+	padding-right:5px;
 	/*vertical-align: middle;*/
 }
 
