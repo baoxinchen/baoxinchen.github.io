@@ -3,7 +3,7 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
-var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.08/15:35pm <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
+var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.08/15:36pm <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
 var mypicture = './images/baoxinchen.jpg'; // this picture will display in the top left corner
 var name = 'Bao Xin Chen 陈宝新';
@@ -234,7 +234,8 @@ var imgs = [
 
 // TODO: detele this part
 //clustrmaps
-var map = '<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=f4aa05&w=150&t=tt&d=Y_NzoJws4dLRWQ9in6tPR0qbMV2yXzsrk_Em9IKsQsA&co=ffffff&cmo=ff5353&cmn=3a3bcc"></script>';
+var map = '<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=tt&d=ej6nfX5t2pj3qpe5cSfROWfYEqK2H-w6xX2su2R96ls&co=9d9d9d&ct=ffffff&cmo=ffffff&cmn=ffffff"></script>';
+
 //google analytics link
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
