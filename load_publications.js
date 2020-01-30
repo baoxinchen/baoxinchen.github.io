@@ -21,8 +21,6 @@ function load_publications(){
 		
 		// authors, title, conference, information, award, links
 		var parent_td = $('<td></td>');
-		var paper_info_div = $('<div></div>');
-		$(paper_info_div).addClass('paper_info_div');
 		
 		// add authors
 		var authors = publications[i]['authors'];
@@ -31,30 +29,30 @@ function load_publications(){
 				var a = $('<a></a>');
 				$(a).attr('href', co_author_list[authors[j]]).attr('target', "_blank");
 				$(a).html($('<span></span>').html(authors[j]));
-				$(paper_info_div).append(a);
-				$(paper_info_div).append($("<span></span>").html(', '));
+				$(parent_td).append(a);
+				$(parent_td).append($("<span></span>").html(', '));
 			}
 			else if (co_author_list[authors[j]] == '' && j < authors.length-1) {
-				$(paper_info_div).append($("<span></span>").html(authors[j]+', '));
+				$(parent_td).append($("<span></span>").html(authors[j]+', '));
 			}
 			else if (co_author_list[authors[j]] != '' && j == authors.length-1) {
-				$(paper_info_div).append($("<span></span>").html('and '));
+				$(parent_td).append($("<span></span>").html('and '));
 				var a = $('<a></a>');
 				$(a).attr('href', co_author_list[authors[j]]).attr('target', "_blank");
 				$(a).html($('<span></span>').html(authors[j]));
-				$(paper_info_div).append(a);
-				$(paper_info_div).append($("<span></span>").html('<br>'));
+				$(parent_td).append(a);
+				$(parent_td).append($("<span></span>").html('<br>'));
 			}
 			else {
-				$(paper_info_div).append($("<span></span>").html('and '+authors[j]+'<br>'));
+				$(parent_td).append($("<span></span>").html('and '+authors[j]+'<br>'));
 			}
 		}
 		
 		// add paper title
-		$(paper_info_div).append($("<span></span>").html('"<b>'+publications[i]['title']+'</b>"<br>'));
+		$(parent_td).append($("<span></span>").html('"<b>'+publications[i]['title']+'</b>"<br>'));
 		
 		//add conference information
-		$(paper_info_div).append($("<span></span>").html(publications[i]['conf']));
+		$(parent_td).append($("<span></span>").html(publications[i]['conf']));
 		
 		// information icon
 		if (publications[i]['info']!='') {
@@ -72,7 +70,7 @@ function load_publications(){
 			$(td).html($('<span></span>').html(publications[i]['info']));
 			$(tr).append(td);
 			$(table).append(tr);
-			$(paper_info_div).append(table);	
+			$(parent_td).append(table);	
 		}
 		
 		//award icon
@@ -91,7 +89,7 @@ function load_publications(){
 			$(td).html($('<span></span>').html(publications[i]['award']));
 			$(tr).append(td);
 			$(table).append(tr);
-			$(paper_info_div).append(table);
+			$(parent_td).append(table);
 		}
 		
 		//paper links
@@ -122,10 +120,10 @@ function load_publications(){
 				$(tr).append(td);
 			}
 			$(table).append(tr);
-			$(paper_info_div).append(table);
+			$(parent_td).append(table);
 		}
 		
-		$(parent_td).html(paper_info_div);
+		//$(parent_td).html(paper_info_div);
 		$(parent_tr).append(parent_td);
 		
 		$('#publications_table').append(parent_tr);
