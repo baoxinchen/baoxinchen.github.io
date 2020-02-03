@@ -36,9 +36,14 @@ a:hover, a:active {
 	text-align: justify;
 }
 
-.frame_div, .frame_table {
+.frame_div, .frame_table, #header_table {
 	max-width: 800px;
 	margin: auto auto;
+}
+
+.frame_table {
+	max-width: 800px;
+	margin: auto 0;
 }
 
 #info_links {

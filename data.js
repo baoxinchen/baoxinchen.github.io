@@ -37,6 +37,9 @@ var info_links = [
 		{'src' : './images/icon_twitter.png', 
 		'alt'  : 'Twitter', 
 		'url'  : ''},
+		{'src' : './images/icon_facebook.png', 
+		'alt'  : 'Facebook', 
+		'url'  : ''},
 		{'src' : './images/icon_github.png', 
 		'alt'  : 'GitHub', 
 		'url'  : 'https://github.com/baoxinchen'},
@@ -188,39 +191,39 @@ var publications = [
 // empty string will be skipped
 var activities = [
 		'', // add a news here
-		'Sep 17th, 2019, passed the thesis oral examination for the degree of Master of Science at York University. My thesis committee members are Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu',
-		'Aug 15th, 2019, one paper accepted in 19th IEEE International Conference on Data Mining (ICDM) 2019, Beijing, China.',
-		'Aug 12th, 2019, one paper accepted in ICCV 2019 workshop: VOT 2019, Seoul, South Korea.',
-		'July 15th, 2019, published a new state-of-the-art object tracking algorithm for visual object tracking datasets that labeled with rotated bounding boxes (VOT 2015-2019). And, the code is available on GitHub <iframe src="https://ghbtns.com/github-btn.html?user=baoxinchen&repo=siammask_e&type=star&count=true&size=small" frameborder="0" scrolling="0" width="80" height="20" style="vertical-align:middle;"></iframe>.',
-		'June 7th, 2018, I presented a poster at NCFRN AGM 2018 in Montreal, Quebec.',
-		'May 21th, 2018, my paper "Scene Classification in Indoor Environments for Robots using Word Embeddings" appeared at ICRA 2018 Workshop: Representing a Complex World in Brisbane, Australia.',
-		'May 10th, 2018, my paper "Indoor Localization in Dynamic Human Environments using Visual Odometry and Global Pose Refinement" appeared at the 15th Conference on Computer and Robot Vision (CRV 2018) in Toronto, Canada.',
-		'May 8th-11th, 2018, volunteered at AI-GI-CRV 2018 in Toronto, Canada.',
-		'May 3th, 2018, one paper accepted by ICRA 2018 Workshop: Representing a Complex World.',
-		'July 10th, 2017, orally presented my paper "Integrating Stereo Vision with a CNN Tracker for a Person-Following Robot" at the 11th International Conference on Computer Vision System (ICVS 2017), Shenzhen, China (Shenzhen is a city near my hometown Taishan).',
-		'June 13th, 2017, presented a poster at York University CVR & VISTA Internatinal Conference on Vision in the Real World, Toronto, Ontario.',
-		'May 19th, 2017, orally presented my paper "Person Following Robot Using Selected Online Ada-Boosting with Stereo Camera" at the 14th Conference on Computer and Robot Vision (CRV 2017), Edmonton, Alberta.',
-		'May 1st, 2017, presented two posters at NSERC Canadian Field Robotics Network (NCFRN), Ottawa, Ontario. Our work was covered by  Discovery, the Globe and mail.'
+		'Sep 17th, 2019<br>Passed the thesis oral examination for the degree of Master of Science at York University. My thesis committee members are Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu.',
+		'Aug 15th, 2019<br>One paper accepted in 19th IEEE International Conference on Data Mining (ICDM) 2019, Beijing, China.',
+		'Aug 12th, 2019<br>One paper accepted in ICCV 2019 workshop: VOT 2019, Seoul, South Korea.',
+		'July 15th, 2019<br>Published a new state-of-the-art object tracking algorithm for visual object tracking datasets that labeled with rotated bounding boxes (VOT 2015-2019). And, the code is available on GitHub <iframe src="https://ghbtns.com/github-btn.html?user=baoxinchen&repo=siammask_e&type=star&count=true&size=small" frameborder="0" scrolling="0" width="80" height="20" style="vertical-align:middle;"></iframe>.',
+		'June 7th, 2018<br>I presented a poster at NCFRN AGM 2018 in Montreal, Quebec.',
+		'May 21th, 2018<br>My paper "Scene Classification in Indoor Environments for Robots using Word Embeddings" appeared at ICRA 2018 Workshop: Representing a Complex World in Brisbane, Australia.',
+		'May 10th, 2018<br>My paper "Indoor Localization in Dynamic Human Environments using Visual Odometry and Global Pose Refinement" appeared at the 15th Conference on Computer and Robot Vision (CRV 2018) in Toronto, Canada.',
+		'May 8th-11th, 2018<br>Volunteered at AI-GI-CRV 2018 in Toronto, Canada.',
+		'May 3th, 2018<br>One paper accepted by ICRA 2018 Workshop: Representing a Complex World.',
+		'July 10th, 2017<br>Orally presented my paper "Integrating Stereo Vision with a CNN Tracker for a Person-Following Robot" at the 11th International Conference on Computer Vision System (ICVS 2017), Shenzhen, China (Shenzhen is a city near my hometown Taishan).',
+		'June 13th, 2017<br>Presented a poster at York University CVR & VISTA Internatinal Conference on Vision in the Real World, Toronto, Ontario.',
+		'May 19th, 2017<br>Orally presented my paper "Person Following Robot Using Selected Online Ada-Boosting with Stereo Camera" at the 14th Conference on Computer and Robot Vision (CRV 2017), Edmonton, Alberta.',
+		'May 1st, 2017<br>Presented two posters at NSERC Canadian Field Robotics Network (NCFRN), Ottawa, Ontario. Our work was covered by  Discovery, the Globe and mail.'
 		];
 
 // awards
 // empty string will be skipped
 var graduate_awards = [
 		'', // add an award here 
-		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University) - offered: CAD $15,000 (2019 - 2020, I rejected).',
-		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University) - Total value: CAD $15,000 (2018 Sep - 2019 Aug).',
-		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award at ICVS 2017, Shenzhen, China',
-		'<a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award at AI-GI-CRV 2017, Edmonton, Canada',
-		'York University Masters Domestic Student Offer funding - Total value: CAD $41,666 (2016 Sep - 2018 Apr).',
-		'Lassonde Graduate Entrance Scholarship (York University) - Total value: CAD $8,000 (2016 Sep - 2017 Aug).'
+		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br>2019 - 2020, offered: CAD $15,000 (I rejected)',
+		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br>2018 - 2019, total value: CAD $15,000',
+		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award<br>@ ICVS 2017, Shenzhen, China',
+		'<a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award<br>@ AI-GI-CRV 2017, Edmonton, Canada',
+		'York University Masters Domestic Student Offer funding<br>2016 - 2018, total value: CAD $41,666',
+		'Lassonde Graduate Entrance Scholarship (York University)<br>2016 - 2017, total value: CAD $8,000'
 		];
 var undergrad_awards = [
 		'', // add an award here
-		'Graduated with High Distinction (University of Toronto) (2016).',
-		'Norma Brock Award (University of Toronto) - Total value: CAD $3,000 (2014 & 2015).',
-		'Dean\'s List (University of Toronto) (2013-2016).'
+		'Graduated with High Distinction (University of Toronto)<br>2016',
+		'Norma Brock Award (University of Toronto, Woodsworth College)<br>2014 & 2015, total value: CAD $3,000',
+		'Dean\'s List (University of Toronto)<br>2013 - 2016'
 		];
-var highschool_awards = ['Ontario Principal\'s Award (2012).']; // set to [], if you don't want to list awards from high school
+var highschool_awards = ['Ontario Principal\'s Award<br>2012']; // set to [], if you don't want to list awards from high school
 
 // add image url in this block
 // imgs = [['url', 'Description'], ...]
