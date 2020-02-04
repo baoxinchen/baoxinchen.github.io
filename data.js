@@ -210,20 +210,20 @@ var activities = [
 // empty string will be skipped
 var graduate_awards = [
 		'', // add an award here 
-		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br>2019 - 2020, offered: CAD $15,000 (I rejected)',
-		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br>2018 - 2019, total value: CAD $15,000',
-		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award<br>@ ICVS 2017, Shenzhen, China',
-		'<a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award<br>@ AI-GI-CRV 2017, Edmonton, Canada',
-		'York University Masters Domestic Student Offer funding<br>2016 - 2018, total value: CAD $41,666',
-		'Lassonde Graduate Entrance Scholarship (York University)<br>2016 - 2017, total value: CAD $8,000'
+		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2019 - 2020, offered: CAD $15,000 (I rejected)</span>',
+		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2018 - 2019, total value: CAD $15,000</span>',
+		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award<br><span style="font-size:12px">@ ICVS 2017, Shenzhen, China</span>',
+		'<a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award<br><span style="font-size:12px">@ AI-GI-CRV 2017, Edmonton, Canada</span>',
+		'York University Masters Domestic Student Offer funding<br><span style="font-size:12px">2016 - 2018, total value: CAD $41,666</span>',
+		'Lassonde Graduate Entrance Scholarship (York University)<br><span style="font-size:12px">2016 - 2017, total value: CAD $8,000</span>'
 		];
 var undergrad_awards = [
 		'', // add an award here
-		'Graduated with High Distinction (University of Toronto)<br>2016',
-		'Norma Brock Award (University of Toronto, Woodsworth College)<br>2014 & 2015, total value: CAD $3,000',
-		'Dean\'s List (University of Toronto)<br>2013 - 2016'
+		'Graduated with High Distinction (University of Toronto)<br><span style="font-size:12px">2016</span>',
+		'Norma Brock Award (University of Toronto, Woodsworth College)<br><span style="font-size:12px">2014 & 2015, total value: CAD $3,000</span>',
+		'Dean\'s List (University of Toronto)<br><span style="font-size:12px">2013 - 2016</span>'
 		];
-var highschool_awards = ['Ontario Principal\'s Award<br>2012']; // set to [], if you don't want to list awards from high school
+var highschool_awards = ['Ontario Principal\'s Award<br><span style="font-size:12px">2012</span>']; // set to [], if you don't want to list awards from high school
 
 // add image url in this block
 // imgs = [['url', 'Description'], ...]
