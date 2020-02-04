@@ -118,7 +118,7 @@ function append_to_table(tablename, arrayname){
 		$(tr).append(td);
 		var td = $('<td></td>');
 		$(td).html(arrayname[i]);
-		$(td).css('padding-bottom', '5px');
+		$(td).css('padding-bottom', '10px');
 		$(tr).append(td);
 		$(tablename).append(tr);
 	}
