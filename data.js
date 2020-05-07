@@ -85,7 +85,7 @@ var publications = [
 		'authors' : ['<b>Bao Xin Chen</b>'],
 		'title'   : 'Real-time Online Human Tracking with a Stereo Camera for Person-Following Robots',
 		'conf'    : '',
-		'info'    : 'Master thesis',
+		'info'    : 'Master thesis 2019',
 		'award'   : '',
 		'links'   : {
 			'[paper]' : './publications/Chen_BaoXin_2019_Masters.pdf',
