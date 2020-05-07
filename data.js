@@ -80,6 +80,19 @@ var publications = [
 		'links'   : {}  // external links. e.g., link to the paper, project page, videos, arXiv, etc.
 		},
 		
+		{'src'    : '',
+		'alt'     : 'Thesis',
+		'authors' : ['<b>Bao Xin Chen</b>'],
+		'title'   : 'Real-time Online Human Tracking with a Stereo Camera for Person-Following Robots',
+		'conf'    : '',
+		'info'    : 'Master thesis',
+		'award'   : '',
+		'links'   : {
+			'[paper]' : './publications/Chen_BaoXin_2019_Masters.pdf',
+			'[cite]'  : './publications/person_following_robot_thesis_citation.txt'
+			}
+		},
+		
 		{'src'    : './images/paper7.jpg', 
 		'alt'     : 'Elastic BSP',
 		'authors' : ['Xing Zhao', 'Manos Papagelis', 'Aijun An', '<b>Bao Xin Chen</b>', 'Junfeng Liu', 'Yonggang Hu'],

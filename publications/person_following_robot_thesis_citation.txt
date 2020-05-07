@@ -1,0 +1,5 @@
+@article{chen2020real,
+  title={Real-time Online Human Tracking with a Stereo Camera for Person-Following Robots},
+  author={Chen, Bao Xin},
+  year={2020}
+}
