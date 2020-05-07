@@ -38,14 +38,16 @@ function load_publications(){
 				$(authors_p).append($("<span></span>").html(authors[j]+', '));
 			}
 			else if (co_author_list[authors[j]] != '' && j == authors.length-1) {
-				$(authors_p).append($("<span></span>").html('and '));
+				if (authors.length) > 1
+					$(authors_p).append($("<span></span>").html('and '));
 				var a = $('<a></a>');
 				$(a).attr('href', co_author_list[authors[j]]).attr('target', "_blank");
 				$(a).html(authors[j]);
 				$(authors_p).append(a);
 			}
 			else {
-				$(authors_p).append($("<span></span>").html('and '+authors[j]));
+				if (authors.length) > 1
+					$(authors_p).append($("<span></span>").html('and '+authors[j]));
 			}
 		}
 		$(parent_td).append(authors_p)
