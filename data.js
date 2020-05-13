@@ -224,7 +224,7 @@ var activities = [
 // empty string will be skipped
 var graduate_awards = [
 		'', // add an award here 
-		'Computer Science & Engineering Outstanding Thesis (York University)<br><span style="font-size:12px">2020</span>',
+		'Computer Science & Engineering Outstanding Thesis (York University)<br><span style="font-size:12px">One award each year for Master students department-wide, 2020</span>',
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2019 - 2020, offered: CAD $15,000 (I rejected)</span>',
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2018 - 2019, total value: CAD $15,000</span>',
 		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award<br><span style="font-size:12px">@ ICVS 2017, Shenzhen, China</span>',
