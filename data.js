@@ -86,7 +86,7 @@ var publications = [
 		'title'   : 'Real-time Online Human Tracking with a Stereo Camera for Person-Following Robots',
 		'conf'    : '',
 		'info'    : 'Master thesis 2019',
-		'award'   : '',
+		'award'   : 'Computer Science & Engineering Outstanding Thesis (York University)',
 		'links'   : {
 			'[paper]' : './publications/Chen_BaoXin_2019_Masters.pdf',
 			'[cite]'  : './publications/person_following_robot_thesis_citation.txt'
@@ -223,6 +223,7 @@ var activities = [
 // empty string will be skipped
 var graduate_awards = [
 		'', // add an award here 
+		'Computer Science & Engineering Outstanding Thesis (York University)<br><span style="font-size:12px">2020</span>',
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2019 - 2020, offered: CAD $15,000 (I rejected)</span>',
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2018 - 2019, total value: CAD $15,000</span>',
 		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award<br><span style="font-size:12px">@ ICVS 2017, Shenzhen, China</span>',
