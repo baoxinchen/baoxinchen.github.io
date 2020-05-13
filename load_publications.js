@@ -48,6 +48,8 @@ function load_publications(){
 			else {
 				if (authors.length > 1)
 					$(authors_p).append($("<span></span>").html('and '+authors[j]));
+				else if (authors.length == 1)
+					$(authors_p).append($("<span></span>").html(authors[j]));
 			}
 		}
 		$(parent_td).append(authors_p)
