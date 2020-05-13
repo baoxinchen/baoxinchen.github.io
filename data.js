@@ -63,8 +63,8 @@ var co_author_list = {
 	'Raghavender Sahdev'   : 'http://www.raghavendersahdev.com/',
 	'Raghavender Sahdev*'  : 'http://www.raghavendersahdev.com/',
 	'Dekun Wu'             : 'https://jackwu502.github.io/',
-	'<b>Bao Xin Chen</b>'  : 'https://baoxinchen.github.io/',
-	'<b>Bao Xin Chen</b>*' : 'https://baoxinchen.github.io/'
+	'<b>Bao Xin Chen</b>'  : '',
+	'<b>Bao Xin Chen</b>*' : ''
 	};
 
 // "publications" is a list of json objects. 
@@ -84,8 +84,8 @@ var publications = [
 		'alt'     : 'Thesis',
 		'authors' : ['<b>Bao Xin Chen</b>'],
 		'title'   : 'Real-time Online Human Tracking with a Stereo Camera for Person-Following Robots',
-		'conf'    : '2019',
-		'info'    : 'Master thesis, committee members: Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu',
+		'conf'    : 'Master thesis 2019',
+		'info'    : 'Committee members: Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu',
 		'award'   : 'Computer Science & Engineering Outstanding Thesis 2020 (York University)',
 		'links'   : {
 			'[paper]' : './publications/Chen_BaoXin_2019_Masters.pdf',
@@ -204,6 +204,7 @@ var publications = [
 // empty string will be skipped
 var activities = [
 		'', // add a news here
+		'Oct 26th, 2019<br> I presented my paper at ICCV 2019 workshop Visual Object Tracking, Seoul, South Korea.', 
 		'Sep 17th, 2019<br>Passed the thesis oral examination for the degree of Master of Science at York University. My thesis committee members are Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu.',
 		'Aug 15th, 2019<br>One paper accepted in 19th IEEE International Conference on Data Mining (ICDM) 2019, Beijing, China.',
 		'Aug 12th, 2019<br>One paper accepted in ICCV 2019 workshop: VOT 2019, Seoul, South Korea.',
