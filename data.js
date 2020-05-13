@@ -84,9 +84,9 @@ var publications = [
 		'alt'     : 'Thesis',
 		'authors' : ['<b>Bao Xin Chen</b>'],
 		'title'   : 'Real-time Online Human Tracking with a Stereo Camera for Person-Following Robots',
-		'conf'    : '',
-		'info'    : 'Master thesis 2019',
-		'award'   : 'Computer Science & Engineering Outstanding Thesis (York University)',
+		'conf'    : '2019',
+		'info'    : 'Master thesis, committee members: Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu',
+		'award'   : 'Computer Science & Engineering Outstanding Thesis 2020 (York University)',
 		'links'   : {
 			'[paper]' : './publications/Chen_BaoXin_2019_Masters.pdf',
 			'[cite]'  : './publications/person_following_robot_thesis_citation.txt'
