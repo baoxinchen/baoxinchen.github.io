@@ -224,9 +224,9 @@ var activities = [
 // empty string will be skipped
 var graduate_awards = [
 		'', // add an award here 
-		'Computer Science & Engineering Outstanding Thesis (York University)<br><span style="font-size:12px">One award each year for Master\'s students department-wide, 2019</span>',
+		'Computer Science & Engineering Outstanding Thesis (York University)<br><span style="font-size:12px">One award each year for Master\'s thesis department-wide, 2019</span>',
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2019 - 2020, offered: CAD $15,000 (I rejected)</span>',
-		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2018 - 2019, total value: CAD $15,000</span>',
+		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2018 - 2019, offered: CAD $15,000 (I rejected)</span>',
 		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award<br><span style="font-size:12px">@ ICVS 2017, Shenzhen, China</span>',
 		'<a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award<br><span style="font-size:12px">@ AI-GI-CRV 2017, Edmonton, Canada</span>',
 		'York University Masters Domestic Student Offer funding<br><span style="font-size:12px">2016 - 2018, total value: CAD $41,666</span>',
@@ -234,9 +234,9 @@ var graduate_awards = [
 		];
 var undergrad_awards = [
 		'', // add an award here
-		'Graduated with High Distinction (University of Toronto)<br><span style="font-size:12px">Graduate with a Cumulative GPA of 3.50/4.0 or above, 2016</span>',
+		'Graduated with High Distinction (University of Toronto)<br><span style="font-size:12px">Award to students who graduated with a Cumulative GPA of 3.50/4.0 or above, 2016</span>',
 		'Norma Brock Award (University of Toronto, Woodsworth College)<br><span style="font-size:12px">2014 & 2015, total value: CAD $3,000</span>',
-		'Dean\'s List (University of Toronto)<br><span style="font-size:12px">2013 - 2016</span>'
+		'Dean\'s List (University of Toronto)<br><span style="font-size:12px">Award to students with annual GPA of 3.50/4.0 or above, 2013 - 2016</span>'
 		];
 var highschool_awards = ['Ontario Principal\'s Award<br><span style="font-size:12px">One award each year institution-wide, 2012</span>']; // set to [], if you don't want to list awards from high school
 
