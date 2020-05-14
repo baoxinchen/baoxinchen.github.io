@@ -80,7 +80,7 @@ var publications = [
 		'links'   : {}  // external links. e.g., link to the paper, project page, videos, arXiv, etc.
 		},
 		
-		{'src'    : './images/masters_thesis.jpg',
+		{'src'    : './images/masters_thesis.png',
 		'alt'     : 'Thesis',
 		'authors' : ['<b>Bao Xin Chen</b>'],
 		'title'   : 'Real-time Online Human Tracking with a Stereo Camera for Person-Following Robots',
