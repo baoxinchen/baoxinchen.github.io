@@ -3,7 +3,7 @@ wrote by Bao Xin Chen
 https://baoxinchen.github.io/baoxinchen/
 */
 
-var copyright = 'Bao Xin Chen &#9400; updated at 2020.01.08/15:38pm <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
+var copyright = 'Bao Xin Chen &#9400; updated at 2020.05.15/10:52am <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
 var mypicture = './images/baoxinchen.jpg'; // this picture will display in the top left corner
 var name = 'Bao Xin Chen 陈宝新';
@@ -98,7 +98,7 @@ var publications = [
 		'authors' : ['Xing Zhao', 'Manos Papagelis', 'Aijun An', '<b>Bao Xin Chen</b>', 'Junfeng Liu', 'Yonggang Hu'],
 		'title'   : 'Elastic Bulk Synchronous Parallel Model for Distributed Deep Learning',
 		'conf'    : 'in <i>19th IEEE International Conference on Data Mining (ICDM)</i>, 2019.',
-		'info'    : 'Short Paper',
+		'info'    : 'Oral, Short Paper',
 		'award'   : '',
 		'links'   : {
 			'[paper]' : 'https://www.eecs.yorku.ca/~papaggel/docs/papers/all/ieee-icdm19-zipline.pdf',
