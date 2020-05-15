@@ -4,7 +4,7 @@ https://baoxinchen.github.io/baoxinchen/
 */
 
 var copyright = 'Bao Xin Chen &#9400; updated at 2020.05.15/10:52am <a href="https://github.com/baoxinchen/baoxinchen.github.io" target="_blank">[source code]</a>';
-var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision, Person Following Robot';
+var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision';
 var mypicture = './images/baoxinchen.jpg'; // this picture will display in the top left corner
 var name = 'Bao Xin Chen 陈宝新';
 var mytitle = 'Master\'s student @ <a href="http://www.yorku.ca" target="_blank">York University</a>, Toronto, Canada';
@@ -129,7 +129,7 @@ var publications = [
 		'authors' : ['Xing Zhao', 'Aijun An', 'Junfeng Liu', '<b>Bao Xin Chen</b>'],
 		'title'   : 'Dynamic Stale Synchronous Parallel Distributed Training for Deep Learning',
 		'conf'    : 'in <i>39th International Conference on Distributed Computing Systems (ICDCS)</i>, IEEE, 2019, pp. 1508-1517.',
-		'info'    : '<b>Oral</b>',
+		'info'    : 'Oral',
 		'award'   : '',
 		'links'   : {
 			'[paper]' : './publications/DSSP_ICDCS_2019.pdf',
@@ -173,8 +173,8 @@ var publications = [
 		'authors' : ['<b>Bao Xin Chen</b>*', 'Raghavender Sahdev*', 'John K. Tsotsos'],
 		'title'   : 'Integrating Stereo Vision with a CNN Tracker for a Person-Following Robot',
 		'conf'    : 'in <i>11th International Conference on Computer Vision Systems (ICVS)</i>, Springer, 2017, pp. 300-313.',
-		'info'    : '<b>Oral</b> in highlighted section',
-		'award'   : 'Received <a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award at ICVS 2017, Shenzhen, China',
+		'info'    : 'Oral in highlighted section',
+		'award'   : 'Received <a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank">Best Paper Finalist</a> award at ICVS 2017, Shenzhen, China',
 		'links'   : {
 			'[project page]' : 'http://jtl.lassonde.yorku.ca/2017/05/person-following-cnn/',
 			'[videos]'       : 'https://www.youtube.com/playlist?list=PL_PLOWFkDLAaWp7P3IEgyoyreIa8sFIIW',
@@ -188,8 +188,8 @@ var publications = [
 		'authors' : ['<b>Bao Xin Chen</b>*', 'Raghavender Sahdev*', 'John K. Tsotsos'],
 		'title'   : 'Person Following Robot Using Selected Online Ada-Boosting with Stereo Camera',
 		'conf'    : 'in <i>Computer and Robot Vision (CRV), 2017 14th Conference on</i>, IEEE, 2017, pp. 48-55.',
-		'info'    : '<b>Oral</b>',
-		'award'   : 'Received <a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award at AI-GI-CRV 2017, Edmonton, Canada',
+		'info'    : 'Oral',
+		'award'   : 'Received <a href="https://www.cipprs.org/awards.html" target="_blank">Best Robotics Paper</a> award at AI-GI-CRV 2017, Edmonton, Canada',
 		'links'   : {
 			'[project page]' : 'http://jtl.lassonde.yorku.ca/2017/02/person-following/',
 			'[paper]'        : 'http://jtl.lassonde.yorku.ca/wp-content/uploads/2017/02/pfr_paper_crv2017.pdf',
@@ -227,8 +227,8 @@ var graduate_awards = [
 		'Computer Science & Engineering Outstanding Thesis (York University)<br><span style="font-size:12px">One award each year for Master\'s thesis department-wide, 2019</span>',
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2019 - 2020, offered: CAD $15,000 (I rejected)</span>',
 		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2018 - 2019, offered: CAD $15,000 (I rejected)</span>',
-		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank"><b>Best Paper Finalist</b></a> award<br><span style="font-size:12px">@ ICVS 2017, Shenzhen, China</span>',
-		'<a href="https://www.cipprs.org/awards.html" target="_blank"><b>Best Robotics Paper</b></a> award<br><span style="font-size:12px">@ AI-GI-CRV 2017, Edmonton, Canada</span>',
+		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank">Best Paper Finalist</a> award<br><span style="font-size:12px">@ ICVS 2017, Shenzhen, China</span>',
+		'<a href="https://www.cipprs.org/awards.html" target="_blank">Best Robotics Paper</a> award<br><span style="font-size:12px">@ AI-GI-CRV 2017, Edmonton, Canada</span>',
 		'York University Masters Domestic Student Offer funding<br><span style="font-size:12px">2016 - 2018, total value: CAD $41,666</span>',
 		'Lassonde Graduate Entrance Scholarship (York University)<br><span style="font-size:12px">2016 - 2017, total value: CAD $8,000</span>'
 		];
