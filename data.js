@@ -86,7 +86,7 @@ var publications = [
 		'title'   : 'Real-time Online Human Tracking with a Stereo Camera for Person-Following Robots',
 		'conf'    : 'Master\'s thesis 2019',
 		'info'    : 'Committee: Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu',
-		'award'   : 'Computer Science & Engineering Outstanding Thesis, 2019',
+		'award'   : 'Computer Science & Engineering Outstanding Thesis award, 2019',
 		'links'   : {
 			'[thesis]' : './publications/Chen_BaoXin_2019_Masters.pdf',
 			'[cite]'  : './publications/person_following_robot_thesis_citation.txt'
