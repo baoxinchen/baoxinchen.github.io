@@ -7,7 +7,7 @@ var copyright = 'Bao Xin Chen &#9400; updated at 2020.05.15/10:52am <a href="htt
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision';
 var mypicture = './images/baoxinchen.jpg'; // this picture will display in the top left corner
 var name = 'Bao Xin Chen 陈宝新';
-var mytitle = 'Master\'s student @ <a href="http://www.yorku.ca" target="_blank">York University</a>, Toronto, Canada';
+var mytitle = 'Co-funder & CTO @ <a href="https://www.nuport.ai/" target="_blank">NuPort Robotics</a>, Toronto, Canada';
 
 var emails = ['baox[last name][at]cse[dot]yorku[dot]ca', 
 		'baoxin[dot][last name][at]outlook[dot]com'];
