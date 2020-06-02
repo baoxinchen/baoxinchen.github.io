@@ -7,13 +7,13 @@ var copyright = 'Bao Xin Chen &#9400; updated at 2020.05.15/10:52am <a href="htt
 var keywords = 'Bao Xin Chen, Bao Chen, Robot Vision';
 var mypicture = './images/baoxinchen.jpg'; // this picture will display in the top left corner
 var name = 'Bao Xin Chen 陈宝新';
-var mytitle = 'Co-funder & CTO @ <a href="https://www.nuport.ai/" target="_blank">NuPort Robotics</a>, an Autonomous Driving Truck startup in Toronto, Canada';
+var mytitle = 'Co-founder  & CTO @ <a href="https://www.nuport.ai/" target="_blank">NuPort Robotics</a>, an Self-driving Truck startup in Toronto, Canada';
 
 var emails = ['baoxin[dot][last name][at]nuport[dot]ai', 
 		'baoxin[dot][last name][at]outlook[dot]com'];
 var citizen = 'Country of Citizenship: Canada <i class="fab fa-canadian-maple-leaf" style="font-size:16px"></i>';
 
-var aboutme = 'I recently completed the Master of Science degree at York University Electrical Engineering and Computer Science (EECS) department (2016 - 2019) under Professor John K. Tsotsos\' supervision. Previously, I earned a Bachelor of Science degree from University of Toronto computer science department. My focus was on Machine Learning and Computer Vision (2012 - 2016). My current research interest is in <b>Robot Vision</b> (real-time computer vision and machine learning applications on mobile platforms).';
+var aboutme = 'I am the co-founder and CTO of NuPort Robotics (2019 - now). NuPort is the first self-driving truck startup company in Canada. I completed the Master of Science degree at York University Electrical Engineering and Computer Science (EECS) department (2016 - 2019) under Professor John K. Tsotsos\' supervision. Previously, I earned a Bachelor of Science degree from University of Toronto computer science department. My focus was on Machine Learning and Computer Vision (2012 - 2016). My current research interest is in <b>Robot Vision</b> (real-time computer vision and machine learning applications on mobile platforms). Feel free to contact me to discuss anything in self-driving vehicles. NuPort is currently hunting talents in this domain.';
 
 // info_links = [{src,alt,url}, ...]
 // e.g., github, linkedin, youtube, google scholar, etc.
