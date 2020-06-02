@@ -9,7 +9,7 @@ var mypicture = './images/baoxinchen.jpg'; // this picture will display in the t
 var name = 'Bao Xin Chen 陈宝新';
 var mytitle = 'Co-funder & CTO @ <a href="https://www.nuport.ai/" target="_blank">NuPort Robotics</a>, Toronto, Canada';
 
-var emails = ['baox[last name][at]cse[dot]yorku[dot]ca', 
+var emails = ['baoxin[dot][last name][at]nuport[dot]ai', 
 		'baoxin[dot][last name][at]outlook[dot]com'];
 var citizen = 'Country of Citizenship: Canada <i class="fab fa-canadian-maple-leaf" style="font-size:16px"></i>';
 
