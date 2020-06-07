@@ -204,7 +204,7 @@ var publications = [
 // empty string will be skipped
 var activities = [
 		'', // add a news here
-		'Oct 26th, 2019<br> I presented my paper at ICCV 2019 workshop Visual Object Tracking, Seoul, South Korea.', 
+		'Oct 26th, 2019<br> I presented my paper "Fast Visual Object Tracking with Rotated Bounding Boxes" at ICCV 2019 workshop Visual Object Tracking, Seoul, South Korea.', 
 		'Sep 17th, 2019<br>Passed the thesis oral examination for the degree of Master of Science at York University. My thesis committee members are Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu.',
 		'Aug 15th, 2019<br>One paper accepted in 19th IEEE International Conference on Data Mining (ICDM) 2019, Beijing, China.',
 		'Aug 12th, 2019<br>One paper accepted in ICCV 2019 workshop: VOT 2019, Seoul, South Korea.',
