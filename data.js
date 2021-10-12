@@ -204,7 +204,7 @@ var publications = [
 // empty string will be skipped
 var activities = [
 		'', // add a news here
-		'Apr 2021<be>Graduated from startup accelerator UC Berkeley <a href="https://skydeck.berkeley.edu/" target="_blank">Skydeck</a> remotely.',
+		'Apr 2021<br>Graduated from startup accelerator UC Berkeley <a href="https://skydeck.berkeley.edu/" target="_blank">Skydeck</a> remotely.',
 		'Sep 2019<br>Graduated from startup accelerator <a href="https://www.nextcanada.com/next-ai/" target="_blank">Next AI</a> in Toronto.',
 		'Oct 26th, 2019<br>I presented my paper "Fast Visual Object Tracking with Rotated Bounding Boxes" at ICCV 2019 workshop Visual Object Tracking, Seoul, South Korea.', 
 		'Sep 17th, 2019<br>Passed the thesis oral examination for the degree of Master of Science at York University. My thesis committee members are Prof. John K. Tsostso, Prof. Michael Brown, and Prof. George Z.H. Zhu.',
