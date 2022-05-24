@@ -227,10 +227,10 @@ var activities = [
 var graduate_awards = [
 		'', // add an award here 
 		'Computer Science & Engineering Outstanding Thesis (York University)<br><span style="font-size:12px">One award each year for Master\'s thesis department-wide, 2019</span>',
-		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2018 & 2019, offered: CAD $15,000/yr (I rejected)</span>',
+		'Queen Elizabeth II Graduate Scholarships in Science & Technology (York University)<br><span style="font-size:12px">2018 & 2019, offered: CAD $15,000/yr (Myself rejected)</span>',
 		'<a href="http://icvs2017.ram-lab.com/program/awards/" target="_blank">Best Paper Finalist</a> award<br><span style="font-size:12px">@ ICVS 2017, Shenzhen, China</span>',
 		'<a href="https://www.cipprs.org/awards.html" target="_blank">Best Robotics Paper</a> award<br><span style="font-size:12px">@ AI-GI-CRV 2017, Edmonton, Canada</span>',
-		'York University Masters Domestic Student Offer funding<br><span style="font-size:12px">2016 - 2018, total value: CAD $41,666</span>',
+		'York University Masters Domestic Student Offer<br><span style="font-size:12px">2016 - 2018, total value: CAD $41,666</span>',
 		'Lassonde Graduate Entrance Scholarship (York University)<br><span style="font-size:12px">2016 - 2017, total value: CAD $8,000</span>'
 		];
 var undergrad_awards = [
